@@ -8,13 +8,16 @@ import Container from './components/Container.jsx'
 import Video from './components/Video.jsx'
 import Ads from './components/Ads.jsx'
 import FooterItem  from './components/FooterItem.jsx'
-import FooterContainer from './components/FooterContainer.jsx'
+import UlContainer from './components/UlContainer.jsx'
 import FooterText from './components/FooterText.jsx'
-import { popularChannels, shorts, videos, textfooter } from './assets/data/Data.jsx'
+import { popularChannels, shorts, videos, textfooter} from './assets/data/Data.jsx'
+import Sidebar from './components/Sidebar.jsx'
 
 function Home() {
   return (
     <>
+<body>
+      <Sidebar/>
     <main className="main-content">
     <Ads/>
     <Blocks>    
@@ -60,21 +63,35 @@ function Home() {
     </Blocks>
     <Ads/>
 
+    {/* <Blocks>
+    <Subtitle subtitle="Recommended"/>
+    <Container>
+        {videos.map((video, index) => (
+        <Video
+          key={index}
+          namevideo={video.namevideo}
+          videoviews={video.videoviews}
+          photo={video.photo}
+        />    
+      ))} 
+    </Container>
+    </Blocks> */}
+
     <Blocks>
-    <FooterContainer>
+    <UlContainer>
       {textfooter.map((footer, index) => (
         <FooterItem
           key={index}
           textfooter={footer.textfooter}
         />
       ))}
-    </FooterContainer>
+    </UlContainer>
     <FooterText text="© 2025 CaTube. All rights reserved." />
     </Blocks>
 
     <NewButton btntitle="Publish"/>
-
     </main>
+    </body>
     </>
   )
 }

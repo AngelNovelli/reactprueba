@@ -1,12 +1,15 @@
-import video from '../../assets/pinterest_swap_challenge.jpg';
-import short from '../../assets/shorts.jpg';
-import angel from '../../assets/angel.jpg';
+import angel from "../../assets/angel.jpg"
+import jeremias from "../../assets/jere.jpg"
+import thiago from "../../assets/yukki.jpg"
+import genaro from "../../assets/gena.jpg"
+import short from "../../assets/shorts.jpg"
+import video from "../../assets/pinterest_swap_challenge.jpg"
 
 const popularChannels = [
     { name: "Angel", subs: "15k subs", photo: angel },
-    { name: "Thiago", subs: "20k subs", photo: angel },
-    { name: "Jeremias", subs: "12k subs", photo: angel },
-    { name: "Genaro", subs: "30k subs", photo: angel },
+    { name: "Thiago", subs: "20k subs", photo: thiago },
+    { name: "Jeremias", subs: "12k subs", photo: jeremias },
+    { name: "Genaro", subs: "30k subs", photo: genaro },
     { name: "Maria", subs: "25k subs", photo: angel },
     { name: "Ana", subs: "18k subs", photo: angel },
     { name: "Beatriz", subs: "22k subs", photo: angel },
@@ -60,4 +63,29 @@ const textfooter = [
 
 ];
 
-export { popularChannels, shorts, videos, textfooter };
+const leftMenu = [
+    { icon: "home", text: "Home", link: "/index.html" },
+    
+    { divider: true },
+    
+    { icon: "radar", text: "Discover", link: "/discover/discover.html" },
+    { icon: "celebration", text: "CaTube Party", link: "/party/party.html" },
+    { icon: "school", text: "CaTube Education", link: "/education/education.html" },
+
+    { divider: true },
+
+    { icon: "auto_awesome_motion", text: "Shorts", link: "/shorts/shorts.html" },
+    { icon: "crown", text: "Trending", link: "/trending/trending.html" },
+    { icon: "subscriptions", text: "Catscribers", link: "/subscribers/subscriptions.html" },
+
+    { divider: true },
+
+    { icon: "account_circle", text: "You", link: "/you/you.html" },
+    { icon: "history", text: "History", link: "/you/you.html" },
+    { icon: "playlist_play", text: "Playlist", link: "/you/you.html" },
+    { icon: "schedule", text: "View later", link: "/you/you.html" },
+    { icon: "favorite", text: "Liked", link: "/you/you.html" },
+    { icon: "smart_display", text: "Your videos", link: "/studio/studio.html?section=content" },
+];
+
+export { popularChannels, shorts, videos, textfooter, leftMenu };

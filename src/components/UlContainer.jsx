@@ -1,8 +1,8 @@
-function FooterContainer({children}) {
+function UlContainer({children}) {
     return (
         <ul className="menu-elem">
             {children}
         </ul>
     );
 }
-export default FooterContainer;
+export default UlContainer;
