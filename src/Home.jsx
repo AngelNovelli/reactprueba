@@ -2,7 +2,6 @@ import './Home.css'
 import NewButton from './components/Button.jsx'
 import Profile from './components/Profile.jsx'
 import Subtitle from './components/Subtitle.jsx'
-import Blocks from './components/Blocks.jsx'
 import Short from './components/Short.jsx'
 import Container from './components/Container.jsx'
 import Video from './components/Video.jsx'
@@ -10,8 +9,9 @@ import Ads from './components/Ads.jsx'
 import FooterItem  from './components/FooterItem.jsx'
 import UlContainer from './components/UlContainer.jsx'
 import FooterText from './components/FooterText.jsx'
-import { popularChannels, shorts, videos, textfooter} from './assets/data/Data.jsx'
+import { popularChannels, shorts, videos, textfooter, recommendedVideos} from './assets/data/Data.jsx'
 import Sidebar from './components/Sidebar.jsx'
+import ButtonCarousel from './components/ButtonCarousel.jsx'
 
 function Home() {
   return (
@@ -20,9 +20,12 @@ function Home() {
       <Sidebar/>
     <main className="main-content">
     <Ads/>
-    <Blocks>    
+
+    <Container className="popular-channels">    
     <Subtitle subtitle="Popular Channels"/>
-    <Container>
+    <Container className="carousel-container">
+        <ButtonCarousel className="carousel-btn left" direction="left" />
+          <Container className="carousel-channels">
           {popularChannels.map((channel, index) => (
           <Profile
             key={index}
@@ -31,12 +34,14 @@ function Home() {
             photo={channel.photo}
           />
         ))}
+          </Container>
+        <ButtonCarousel className="carousel-btn right" direction="right" />
     </Container>
-    </Blocks>
+    </Container>
 
-    <Blocks>
+    <Container className="trending">
     <Subtitle subtitle="Shorts"/>
-    <Container>
+    <Container className="container">
       {shorts.map((short, index) => (
         <Short
           key={index}
@@ -46,11 +51,11 @@ function Home() {
         />    
       ))}           
     </Container>
-    </Blocks>
+    </Container>
 
-    <Blocks>
+    <Container className="subscriptions">
     <Subtitle subtitle="Catscribers"/>
-    <Container>
+    <Container className="container">
       {videos.map((video, index) => (
         <Video
           key={index}
@@ -60,24 +65,25 @@ function Home() {
         />    
       ))}           
     </Container>
-    </Blocks>
-    <Ads/>
-
-    {/* <Blocks>
+    </Container>
+    
+    <Container className="recommendations">
     <Subtitle subtitle="Recommended"/>
-    <Container>
-        {videos.map((video, index) => (
+    <Container className="recommendations-container">
+        {recommendedVideos.map((video, index) => (
         <Video
           key={index}
-          namevideo={video.namevideo}
-          videoviews={video.videoviews}
-          photo={video.photo}
+          namevideo={video.namevideorecommended}
+          videoviews={video.videoviewsrecommended}
+          photo={video.photorecommended}
         />    
       ))} 
     </Container>
-    </Blocks> */}
+    </Container>
 
-    <Blocks>
+    <Ads/>
+
+    <Container className="footer">
     <UlContainer>
       {textfooter.map((footer, index) => (
         <FooterItem
@@ -87,7 +93,7 @@ function Home() {
       ))}
     </UlContainer>
     <FooterText text="© 2025 CaTube. All rights reserved." />
-    </Blocks>
+    </Container>
 
     <NewButton btntitle="Publish"/>
     </main>

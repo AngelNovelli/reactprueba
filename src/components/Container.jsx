@@ -1,6 +1,6 @@
-function Container({children}){
+function Container(props){
     return(
-        <div className="container">{children}</div>
+        <div className={`${props.className}`}>{props.children}</div>
     );
 
 }

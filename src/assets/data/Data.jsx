@@ -1,9 +1,10 @@
-import angel from "../../assets/angel.jpg"
-import jeremias from "../../assets/jere.jpg"
-import thiago from "../../assets/yukki.jpg"
-import genaro from "../../assets/gena.jpg"
-import short from "../../assets/shorts.jpg"
-import video from "../../assets/pinterest_swap_challenge.jpg"
+import angel from "../media/profile/angel.jpg"
+import jeremias from "../media/profile/jere.jpg"
+import thiago from "../media/profile/yukki.jpg"
+import genaro from "../media/profile/gena.jpg"
+import short from "../media/thumbnails/shorts.jpg"
+import video from "../media/thumbnails/pinterest_swap_challenge.jpg"
+import videorecommended from "../media/thumbnails/miniatura.jpg"
 
 const popularChannels = [
     { name: "Angel", subs: "15k subs", photo: angel },
@@ -22,7 +23,7 @@ const popularChannels = [
     { name: "Isabel", subs: "13k subs", photo: angel },
     { name: "João", subs: "29k subs", photo: angel },
     { name: "Lucas", subs: "24k subs", photo: angel },
-    { name: "Nicolas", subs: "27k subs", photo: angel },
+    { name: "Mariana", subs: "23k subs", photo: angel },
 ];
 
 const shorts = [
@@ -46,6 +47,31 @@ const videos = [
     { namevideo: "Hamsters Running", videoviews: "6k views • 5d ago", photo: video },
     { namevideo: "Turtles Crawling", videoviews: "3k views • 7d ago", photo: video },
     { namevideo: "Lizards Sunbathing", videoviews: "2k views • 8d ago", photo: video },
+    { namevideo: "Rabbits Hopping", videoviews: "4k views • 9d ago", photo: video },
+];
+
+const recommendedVideos = [
+    { namevideorecommended: "Swap Challenge", videoviewsrecommended: "25k views • 2d ago", photorecommended: videorecommended },
+    { namevideorecommended: "Dance Off", videoviewsrecommended: "30k views • 3d ago", photorecommended: videorecommended },
+    { namevideorecommended: "Guinea Pigs Eating", videoviewsrecommended: "1k views • 10d ago", photorecommended: videorecommended },
+    { namevideorecommended: "Frogs Jumping", videoviewsrecommended: "900 views • 11d ago", photorecommended: videorecommended },
+    { namevideorecommended: "Rabbits Hopping", videoviewsrecommended: "4k views • 5d ago", photorecommended: videorecommended },
+    { namevideorecommended: "Parrots Talking", videoviewsrecommended: "12k views • 6d ago", photorecommended: videorecommended },
+    { namevideorecommended: "Kittens Purring", videoviewsrecommended: "15k views • 1d ago", photorecommended: videorecommended },
+    { namevideorecommended: "Puppies Playing", videoviewsrecommended: "20k views • 4d ago", photorecommended: videorecommended },
+    { namevideorecommended: "Wildlife Documentary", videoviewsrecommended: "50k views • 8d ago", photorecommended: videorecommended },
+    { namevideorecommended: "Travel Guide", videoviewsrecommended: "18k views • 9d ago", photorecommended: videorecommended },
+    { namevideorecommended: "Tech Unboxing", videoviewsrecommended: "22k views • 7d ago", photorecommended: videorecommended },
+    { namevideorecommended: "Cooking Show", videoviewsrecommended: "16k views • 12d ago", photorecommended: videorecommended },
+    { namevideorecommended: "Workout Routine", videoviewsrecommended: "14k views • 13d ago", photorecommended: videorecommended },
+    { namevideorecommended: "Gaming Stream", videoviewsrecommended: "28k views • 14d ago", photorecommended: videorecommended },
+    { namevideorecommended: "Music Video", videoviewsrecommended: "35k views • 15d ago", photorecommended: videorecommended },
+    { namevideorecommended: "Art Process", videoviewsrecommended: "9k views • 16d ago", photorecommended: videorecommended },
+    { namevideorecommended: "DIY Project", videoviewsrecommended: "11k views • 17d ago", photorecommended: videorecommended },
+    { namevideorecommended: "Movie Trailer", videoviewsrecommended: "40k views • 18d ago", photorecommended: videorecommended },
+    { namevideorecommended: "Book Review", videoviewsrecommended: "3k views • 19d ago", photorecommended: videorecommended },
+    { namevideorecommended: "Science Experiment", videoviewsrecommended: "8k views • 20d ago", photorecommended: videorecommended },
+
 ];
 
 const textfooter = [
@@ -88,4 +114,4 @@ const leftMenu = [
     { icon: "smart_display", text: "Your videos", link: "/studio/studio.html?section=content" },
 ];
 
-export { popularChannels, shorts, videos, textfooter, leftMenu };
+export { popularChannels, shorts, videos, textfooter, leftMenu, recommendedVideos };
