@@ -4,9 +4,8 @@ function ButtonCarousel({ direction, carouselRef }) {
 
   const handleClick = () => {
     if (!carouselRef.current) return;
-    const itemWidth = carouselRef.current.firstChild?.offsetWidth || 150; // fallback 150px
-    const gap = 32;
-    const scrollAmount = (itemWidth + gap) * 9.21;
+    const containerWidth = carouselRef.current.clientWidth;
+    const scrollAmount = containerWidth * 0.8; 
     carouselRef.current.scrollBy({
       left: direction === "left" ? -scrollAmount : scrollAmount,
       behavior: "smooth",

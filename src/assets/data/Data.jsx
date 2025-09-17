@@ -5,6 +5,14 @@ import genaro from "../media/profile/gena.jpg"
 import short from "../media/thumbnails/shorts.jpg"
 import video from "../media/thumbnails/pinterest_swap_challenge.jpg"
 import videorecommended from "../media/thumbnails/miniatura.jpg"
+import funnycats from "../media/thumbnails/funnycats.jpg"
+import amazingdogs from "../media/thumbnails/amazingdogs.jpg"
+import parrotstalking from "../media/thumbnails/parrotstalking.jpg"
+import rabbits from "../media/thumbnails/rabbits.jpg"
+import fitness from "../media/thumbnails/fitness.jpg"
+import cooking from "../media/thumbnails/cooking.jpg"
+import cookingshow from "../media/thumbnails/cookingshow.jpg"
+import frogjumping from "../media/thumbnails/frogjumping.jpg"
 
 const popularChannels = [
     { name: "Angel", subs: "15k subs", photo: angel },
@@ -46,13 +54,13 @@ const popularChannels = [
 ];
 
 const shorts = [
-    { nameshort: "Funny Cats", shortviews: "9k views • 1d ago", photo: short },
-    { nameshort: "Amazing Dogs", shortviews: "12k views • 2d ago", photo: short },
+    { nameshort: "Funny Cats", shortviews: "9k views • 1d ago", photo: funnycats },
+    { nameshort: "Amazing Dogs", shortviews: "12k views • 2d ago", photo: amazingdogs },
     { nameshort: "Wildlife Wonders", shortviews: "15k views • 3d ago", photo: short },
     { nameshort: "Travel Vlogs", shortviews: "20k views • 4d ago", photo: short },
     { nameshort: "Tech Reviews", shortviews: "8k views • 5d ago", photo: short },
-    { nameshort: "Cooking Tips", shortviews: "11k views • 6d ago", photo: short },
-    { nameshort: "Fitness Routines", shortviews: "14k views • 7d ago", photo: short },
+    { nameshort: "Cooking Tips", shortviews: "11k views • 6d ago", photo: cooking },
+    { nameshort: "Fitness Routines", shortviews: "14k views • 7d ago", photo: fitness },
     { nameshort: "Gaming Highlights", shortviews: "13k views • 9d ago", photo: short },
     { nameshort: "Music Covers", shortviews: "10k views • 10d ago", photo: short },
     { nameshort: "Art Tutorials", shortviews: "6k views • 11d ago", photo: short },
@@ -76,10 +84,10 @@ const videos = [
     { namevideo: "Hamsters Running", videoviews: "6k views • 5d ago", photo: video },
     { namevideo: "Turtles Crawling", videoviews: "3k views • 7d ago", photo: video },
     { namevideo: "Lizards Sunbathing", videoviews: "2k views • 8d ago", photo: video },
-    { namevideo: "Parrots Talking", videoviews: "12k views • 6d ago", photo: video },
+    { namevideo: "Parrots Talking", videoviews: "12k views • 6d ago", photo: parrotstalking },
     { namevideo: "Guinea Pigs Eating", videoviews: "1k views • 10d ago", photo: video },
-    { namevideo: "Frogs Jumping", videoviews: "900 views • 11d ago", photo: video },
-    { namevideo: "Rabbits Hopping", videoviews: "4k views • 5d ago", photo: video },
+    { namevideo: "Frogs Jumping", videoviews: "900 views • 11d ago", photo: frogjumping },
+    { namevideo: "Rabbits Hopping", videoviews: "4k views • 5d ago", photo: rabbits },
     { namevideo: "Kittens Purring", videoviews: "15k views • 1d ago", photo: video },
     { namevideo: "Puppies Playing", videoviews: "20k views • 4d ago", photo: video },
     { namevideo: "Wildlife Documentary", videoviews: "50k views • 8d ago", photo: video },
@@ -100,15 +108,15 @@ const recommendedVideos = [
     { namevideorecommended: "Swap Challenge", videoviewsrecommended: "25k views • 2d ago", photorecommended: videorecommended },
     { namevideorecommended: "Dance Off", videoviewsrecommended: "30k views • 3d ago", photorecommended: videorecommended },
     { namevideorecommended: "Guinea Pigs Eating", videoviewsrecommended: "1k views • 10d ago", photorecommended: videorecommended },
-    { namevideorecommended: "Frogs Jumping", videoviewsrecommended: "900 views • 11d ago", photorecommended: videorecommended },
-    { namevideorecommended: "Rabbits Hopping", videoviewsrecommended: "4k views • 5d ago", photorecommended: videorecommended },
-    { namevideorecommended: "Parrots Talking", videoviewsrecommended: "12k views • 6d ago", photorecommended: videorecommended },
+    { namevideorecommended: "Frogs Jumping", videoviewsrecommended: "900 views • 11d ago", photorecommended: frogjumping },
+    { namevideorecommended: "Rabbits Hopping", videoviewsrecommended: "4k views • 5d ago", photorecommended: rabbits },
+    { namevideorecommended: "Parrots Talking", videoviewsrecommended: "12k views • 6d ago", photorecommended: parrotstalking },
     { namevideorecommended: "Kittens Purring", videoviewsrecommended: "15k views • 1d ago", photorecommended: videorecommended },
     { namevideorecommended: "Puppies Playing", videoviewsrecommended: "20k views • 4d ago", photorecommended: videorecommended },
     { namevideorecommended: "Wildlife Documentary", videoviewsrecommended: "50k views • 8d ago", photorecommended: videorecommended },
     { namevideorecommended: "Travel Guide", videoviewsrecommended: "18k views • 9d ago", photorecommended: videorecommended },
     { namevideorecommended: "Tech Unboxing", videoviewsrecommended: "22k views • 7d ago", photorecommended: videorecommended },
-    { namevideorecommended: "Cooking Show", videoviewsrecommended: "16k views • 12d ago", photorecommended: videorecommended },
+    { namevideorecommended: "Cooking Show", videoviewsrecommended: "16k views • 12d ago", photorecommended: cookingshow },
     { namevideorecommended: "Workout Routine", videoviewsrecommended: "14k views • 13d ago", photorecommended: videorecommended },
     { namevideorecommended: "Gaming Stream", videoviewsrecommended: "28k views • 14d ago", photorecommended: videorecommended },
     { namevideorecommended: "Music Video", videoviewsrecommended: "35k views • 15d ago", photorecommended: videorecommended },
