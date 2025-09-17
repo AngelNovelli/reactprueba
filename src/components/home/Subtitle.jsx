@@ -1,6 +1,6 @@
 function Subtitle(props){
     return(
-    <h2 className="subtitle">{props.subtitle}</h2>
+    <h3 className="subtitle">{props.subtitle}</h3>
     );
 }
 export default Subtitle;

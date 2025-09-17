@@ -4,10 +4,9 @@ function ButtonCarousel({ direction, carouselRef }) {
 
   const handleClick = () => {
     if (!carouselRef.current) return;
-    const itemWidth =
-      carouselRef.current.firstChild?.offsetWidth || 150; // fallback 150px
-    const gap = 16; // ajustalo al gap que uses en el CSS
-    const scrollAmount = (itemWidth + gap) * 5;
+    const itemWidth = carouselRef.current.firstChild?.offsetWidth || 150; // fallback 150px
+    const gap = 32;
+    const scrollAmount = (itemWidth + gap) * 9.21;
     carouselRef.current.scrollBy({
       left: direction === "left" ? -scrollAmount : scrollAmount,
       behavior: "smooth",
@@ -15,13 +14,7 @@ function ButtonCarousel({ direction, carouselRef }) {
   };
 
   return (
-    <button
-      className={`carousel-btn ${direction}`}
-      onClick={handleClick}
-      aria-label={label}
-    >
-      {icon}
-    </button>
+    <button className={`carousel-btn ${direction}`} onClick={handleClick} aria-label={label}> {icon} </button>
   );
 }
 
