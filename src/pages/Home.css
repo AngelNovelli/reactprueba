@@ -72,9 +72,7 @@ a {
   background-color: var(--btn-dark);
 }
 
-.carousel-channels,
-.carousel-trends,
-.carousel-subs {
+.carousel-cts {
   display: flex;
   align-items: center;
   gap: 28px;
@@ -82,9 +80,7 @@ a {
   scroll-behavior: smooth;
 }
 
-.carousel-channels::-webkit-scrollbar,
-.carousel-trends::-webkit-scrollbar,
-.carousel-subs::-webkit-scrollbar {
+.carousel-cts::-webkit-scrollbar {
   display: none;
 }
 

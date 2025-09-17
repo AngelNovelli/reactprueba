@@ -19,7 +19,8 @@ function YourChannel() {
                     <Profile></Profile>
                     <ContainerButton></ContainerButton>
                     <Container className="content-table">
-                        <ContainerChannel></ContainerChannel>
+                        <ContainerChannel>
+                        </ContainerChannel>
                     </Container>
                 </main>
             </body>
