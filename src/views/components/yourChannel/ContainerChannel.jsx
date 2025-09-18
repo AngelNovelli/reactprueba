@@ -1,4 +1,4 @@
-import foto from '../../assets/media/yourChannel_media/thumbnails/cabildo.png'
+import foto from '../../../assets/media/yourChannel_media/thumbnails/cabildo.png'
 
 function ContainerChannel() {
     return (

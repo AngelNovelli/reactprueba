@@ -1,4 +1,4 @@
-import angel from "../../assets/media/profile/angel.jpg"
+import angel from "../../../assets/media/profile/angel.jpg"
 
 function Profile() {
     return (

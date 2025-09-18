@@ -1,4 +1,4 @@
-import { leftMenu } from "../../assets/data/Data";
+import { leftMenu } from "../../../assets/data/Data.jsx";
 import { useState } from "react";
 
 function Sidebar() {

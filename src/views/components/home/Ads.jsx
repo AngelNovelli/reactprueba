@@ -1,4 +1,4 @@
-import ads from '../../assets/media/home_media/ads/offers.png';
+import ads from '../../../assets/media/home_media/ads/offers.png';
 
 function Ads (){
     return(

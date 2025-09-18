@@ -1,7 +1,7 @@
 import Container from '../home/Container.jsx'
 import Subtitle from '../home/Subtitle.jsx'
 import Video from '../home/Video.jsx'
-import { recommendedVideos } from '../../assets/data/Data.jsx';
+import { recommendedVideos } from '../../../assets/data/Data.jsx';
 
 function Recommendations() {
     return (

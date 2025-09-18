@@ -1,11 +1,11 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import Home from './pages/Home.jsx'
-import YourChannel from './pages/YourChannel.jsx'
+// import Home from './views/Home'
+import YourChannel from './views/YourChannel.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Home />
-    {/* <YourChannel /> */}
+    {/* <Home /> */}
+    <YourChannel />
   </StrictMode>,
 )

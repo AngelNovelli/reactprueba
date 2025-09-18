@@ -1,4 +1,4 @@
-import banner from '../../assets/media/yourChannel_media/thumbnails/banner-tv.jpg';
+import banner from '../../../assets/media/yourChannel_media/thumbnails/banner-tv.jpg';
 
 function Banner() {
     return (
