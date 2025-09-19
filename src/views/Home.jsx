@@ -1,6 +1,5 @@
 import '../styles/Home.css'
 import '../styles/Global_components.css'
-import NewButton from './components/home/Button.jsx'
 import Ads from './components/home/Ads.jsx'
 import Sidebar from './components/home/Sidebar.jsx'
 import Footer from './components/home/Footer.jsx'
@@ -29,8 +28,6 @@ function Home() {
           <Ads />
 
           <Footer />
-
-          <NewButton btntitle="Publish" />
         </main>
       </body>
     </>

@@ -25,12 +25,17 @@ import cookingshow from "../media/thumbnails/cookingshow.jpg"
 import frogjumping from "../media/thumbnails/frogjumping.jpg"
 import tech from "../media/thumbnails/tech.jpg"
 import travel from "../media/thumbnails/travel.jpg"
-import gaming from "../media/thumbnails/gaming.jpg" 
-import wildlife from "../media/thumbnails/wildlife.jpg" 
+import gaming from "../media/thumbnails/gaming.jpg"
+import wildlife from "../media/thumbnails/wildlife.jpg"
 import cabildo from "../media/yourChannel_media/thumbnails/cabildo.png"
 import cjs from "../media/yourChannel_media/thumbnails/cjs.jpg"
 import duki from "../media/yourChannel_media/thumbnails/duki.jpeg"
-import pity from "../media/yourChannel_media/thumbnails/pity.jpg"  
+import pity from "../media/yourChannel_media/thumbnails/pity.jpg"
+import deleted from "../media/yourChannel_media/Delete.png"
+import imageIcon from "../media/yourChannel_media/Image-icon.png"
+import poll from "../media/yourChannel_media/Poll-icon.png"
+import quiz from "../media/yourChannel_media/Quiz-icon.png"
+import videoIcon from "../media/yourChannel_media/Video-icon.png"
 
 const popularChannels = [
     { name: "Angel", subs: "15k subs", photo: angelr },
@@ -39,7 +44,7 @@ const popularChannels = [
     { name: "Genaro", subs: "30k subs", photo: genar },
     { name: "Aramis", subs: "25k subs", photo: aramis },
     { name: "Jonas", subs: "18k subs", photo: jonas },
-    { name: "David", subs: "22k subs", photo: david},
+    { name: "David", subs: "22k subs", photo: david },
     { name: "Nicolas", subs: "28k subs", photo: nicolas },
     { name: "Tiziano", subs: "17k subs", photo: tiziano },
     { name: "Laura", subs: "14k subs", photo: laura },
@@ -197,29 +202,86 @@ const videoLatest = [
     { namevideo: "Duki Viaje", videoviews: "67k views • 22d ago", photo: duki },
     { namevideo: "Duki Making Of", videoviews: "52k views • 23d ago", photo: duki },
     { namevideo: "Duki Top Canciones", videoviews: "140k views • 24d ago", photo: duki },
-    { namevideo: "Pity en vivo", videoviews: "90k views • 1d ago", photo: pity },
-    { namevideo: "Pity Freestyle", videoviews: "75k views • 2d ago", photo: pity },
-    { namevideo: "Pity Entrevista", videoviews: "50k views • 3d ago", photo: pity },
-    { namevideo: "Pity Backstage", videoviews: "35k views • 4d ago", photo: pity },
-    { namevideo: "Pity y Amigos", videoviews: "60k views • 5d ago", photo: pity },
-    { namevideo: "Pity en el Estudio", videoviews: "45k views • 6d ago", photo: pity },
-    { namevideo: "Pity Reaccionando", videoviews: "30k views • 7d ago", photo: pity },
-    { namevideo: "Pity en TV", videoviews: "20k views • 8d ago", photo: pity },
-    { namevideo: "Pity Documental", videoviews: "85k views • 9d ago", photo: pity },
-    { namevideo: "Pity Mejores Momentos", videoviews: "110k views • 10d ago", photo: pity },
-    { namevideo: "Pity en el Estadio", videoviews: "100k views • 11d ago", photo: pity },
-    { namevideo: "Pity Acústico", videoviews: "70k views • 12d ago", photo: pity },
-    { namevideo: "Pity en Radio", videoviews: "55k views • 13d ago", photo: pity },
-    { namevideo: "Pity Colaboraciones", videoviews: "80k views • 14d ago", photo: pity },
-    { namevideo: "Pity en Premios", videoviews: "67k views • 16d ago", photo: pity },
-    { namevideo: "Pity en el Studio", videoviews: "48k views • 17d ago", photo: pity },
-    { namevideo: "Pity Preguntas y Respuestas", videoviews: "52k views • 18d ago", photo: pity },
-    { namevideo: "Pity Videoclip", videoviews: "120k views • 19d ago", photo: pity },
-    { namevideo: "Pity Ensayo", videoviews: "38k views • 20d ago", photo: pity },
-    { namevideo: "Pity Fans", videoviews: "63k views • 21d ago", photo: pity },
-    { namevideo: "Pity Viaje", videoviews: "57k views • 22d ago", photo: pity },
-    { namevideo: "Pity Making Of", videoviews: "42k views • 23d ago", photo: pity },
-    { namevideo: "Pity Top Canciones", videoviews: "130k views • 24d ago", photo: pity },
+    { namevideo: "Cabildo en vivo", videoviews: "90k views • 1d ago", photo: cabildo },
+    { namevideo: "Cabildo Freestyle", videoviews: "75k views • 2d ago", photo: cabildo },
+    { namevideo: "Cabildo Entrevista", videoviews: "50k views • 3d ago", photo: cabildo },
+    { namevideo: "Cabildo Backstage", videoviews: "35k views • 4d ago", photo: cabildo },
+    { namevideo: "Cabildo y Amigos", videoviews: "60k views • 5d ago", photo: cabildo },
+    { namevideo: "Cabildo en el Estudio", videoviews: "45k views • 6d ago", photo: cabildo },
+    { namevideo: "Cabildo Reaccionando", videoviews: "30k views • 7d ago", photo: cabildo },
+    { namevideo: "Cabildo en TV", videoviews: "20k views • 8d ago", photo: cabildo },
+    { namevideo: "Cabildo Documental", videoviews: "85k views • 9d ago", photo: cabildo },
+    { namevideo: "Cabildo Mejores Momentos", videoviews: "110k views • 10d ago", photo: cabildo },
+    { namevideo: "Cabildo en el Estadio", videoviews: "100k views • 11d ago", photo: cabildo },
+    { namevideo: "Cabildo Acústico", videoviews: "70k views • 12d ago", photo: cabildo },
+    { namevideo: "Cabildo en Radio", videoviews: "55k views • 13d ago", photo: cabildo },
+    { namevideo: "Cabildo Colaboraciones", videoviews: "80k views • 14d ago", photo: cabildo },
+    { namevideo: "Cabildo en Premios", videoviews: "67k views • 16d ago", photo: cabildo },
+    { namevideo: "Cabildo en el Studio", videoviews: "48k views • 17d ago", photo: cabildo },
+    { namevideo: "Cabildo Preguntas y Respuestas", videoviews: "52k views • 18d ago", photo: cabildo },
+    { namevideo: "Cabildo Videoclip", videoviews: "120k views • 19d ago", photo: cabildo },
+    { namevideo: "Cabildo Ensayo", videoviews: "38k views • 20d ago", photo: cabildo },
+    { namevideo: "Cabildo Fans", videoviews: "63k views • 21d ago", photo: cabildo },
+    { namevideo: "Cabildo Viaje", videoviews: "57k views • 22d ago", photo: cabildo },
+    { namevideo: "Cabildo Making Of", videoviews: "42k views • 23d ago", photo: cabildo },
+    { namevideo: "Cabildo Top Canciones", videoviews: "130k views • 24d ago", photo: cabildo },
+    { namevideo: "Cabildo Especial", videoviews: "10k views • 1d ago", photo: cabildo },
+];
+
+const videoPopular = [
+    { namevideo: "Cabildo Celebración", videoviews: "100k views • 1d ago", photo: cabildo },
+    { namevideo: "Cabildo Historia Viva", videoviews: "85k views • 2d ago", photo: cabildo },
+    { namevideo: "Cabildo Entrevista Exclusiva", videoviews: "60k views • 3d ago", photo: cabildo },
+    { namevideo: "Cabildo Tras Bambalinas", videoviews: "45k views • 4d ago", photo: cabildo },
+    { namevideo: "Cabildo y la Comunidad", videoviews: "70k views • 5d ago", photo: cabildo },
+    { namevideo: "Cabildo en el Estudio", videoviews: "55k views • 6d ago", photo: cabildo },
+    { namevideo: "Cabildo Reacciones", videoviews: "40k views • 7d ago", photo: cabildo },
+    { namevideo: "Cabildo en TV", videoviews: "30k views • 8d ago", photo: cabildo },
+    { namevideo: "Cabildo Documental", videoviews: "95k views • 9d ago", photo: cabildo },
+    { namevideo: "Cabildo Grandes Momentos", videoviews: "120k views • 10d ago", photo: cabildo },
+    { namevideo: "Cabildo en el Estadio", videoviews: "110k views • 11d ago", photo: cabildo },
+    { namevideo: "Cabildo Acústico", videoviews: "80k views • 12d ago", photo: cabildo },
+    { namevideo: "Cabildo en Radio", videoviews: "65k views • 13d ago", photo: cabildo },
+    { namevideo: "Cabildo Colaboraciones", videoviews: "90k views • 14d ago", photo: cabildo },
+    { namevideo: "Cabildo Sesión de Fotos", videoviews: "50k views • 15d ago", photo: cabildo },
+    { namevideo: "Cabildo en Premios", videoviews: "77k views • 16d ago", photo: cabildo },
+    { namevideo: "Cabildo en el Studio", videoviews: "58k views • 17d ago", photo: cabildo },
+    { namevideo: "Cabildo Preguntas y Respuestas", videoviews: "62k views • 18d ago", photo: cabildo },
+    { namevideo: "Cabildo Videoclip", videoviews: "130k views • 19d ago", photo: cabildo },
+    { namevideo: "Cabildo Ensayo", videoviews: "48k views • 20d ago", photo: cabildo },
+    { namevideo: "Cabildo Fans", videoviews: "73k views • 21d ago", photo: cabildo },
+    { namevideo: "Cabildo Viaje", videoviews: "67k views • 22d ago", photo: cabildo },
+    { namevideo: "Cabildo Making Of", videoviews: "52k views • 23d ago", photo: cabildo },
+    { namevideo: "Cabildo Top Videos", videoviews: "140k views • 24d ago", photo: cabildo },
+    { namevideo: "Cabildo Especial", videoviews: "10k views • 1d ago", photo: cabildo },
+];
+
+const videoOldest = [
+    { namevideo: "Video Clásico 1", videoviews: "100k views • 1d ago", photo: video },
+    { namevideo: "Video Clásico 2", videoviews: "85k views • 2d ago", photo: video },
+    { namevideo: "Video Clásico 3", videoviews: "60k views • 3d ago", photo: video },
+    { namevideo: "Video Clásico 4", videoviews: "45k views • 4d ago", photo: video },
+    { namevideo: "Video Clásico 5", videoviews: "70k views • 5d ago", photo: video },
+    { namevideo: "Video Clásico 6", videoviews: "55k views • 6d ago", photo: video },
+    { namevideo: "Video Clásico 7", videoviews: "40k views • 7d ago", photo: video },
+    { namevideo: "Video Clásico 8", videoviews: "30k views • 8d ago", photo: video },
+    { namevideo: "Video Clásico 9", videoviews: "95k views • 9d ago", photo: video },
+    { namevideo: "Video Clásico 10", videoviews: "120k views • 10d ago", photo: video },
+    { namevideo: "Video Clásico 11", videoviews: "110k views • 11d ago", photo: video },
+    { namevideo: "Video Clásico 12", videoviews: "80k views • 12d ago", photo: video },
+    { namevideo: "Video Clásico 13", videoviews: "65k views • 13d ago", photo: video },
+    { namevideo: "Video Clásico 14", videoviews: "90k views • 14d ago", photo: video },
+    { namevideo: "Video Clásico 15", videoviews: "50k views • 15d ago", photo: video },
+    { namevideo: "Video Clásico 16", videoviews: "77k views • 16d ago", photo: video },
+    { namevideo: "Video Clásico 17", videoviews: "58k views • 17d ago", photo: video },
+    { namevideo: "Video Clásico 18", videoviews: "62k views • 18d ago", photo: video },
+    { namevideo: "Video Clásico 19", videoviews: "130k views • 19d ago", photo: video },
+    { namevideo: "Video Clásico 20", videoviews: "48k views • 20d ago", photo: video },
+    { namevideo: "Video Clásico 21", videoviews: "73k views • 21d ago", photo: video },
+    { namevideo: "Video Clásico 22", videoviews: "67k views • 22d ago", photo: video },
+    { namevideo: "Video Clásico 23", videoviews: "52k views • 23d ago", photo: video },
+    { namevideo: "Video Clásico 24", videoviews: "140k views • 24d ago", photo: video },
+    { namevideo: "Video Clásico Especial", videoviews: "10k views • 1d ago", photo: video },
 ];
 
 const shortsyc = [
@@ -233,6 +295,111 @@ const shortsyc = [
     { nameshort: "Cats in Boxes", shortviews: "17k views • 8d ago", photo: cjs },
     { nameshort: "Cat Fails Compilation", shortviews: "20k views • 9d ago", photo: cjs },
     { nameshort: "Cat Siblings Play", shortviews: "8k views • 10d ago", photo: cjs },
+];
+
+const shortsLatest = Array.from({ length: 150 }, (_, i) => ({
+    nameshort: `Latest Short #${i + 1}`,
+    shortviews: `${Math.floor(Math.random() * 20) + 1}k views • ${i + 1}d ago`,
+    photo: short,
+}));
+
+const shortsPopular = Array.from({ length: 150 }, (_, i) => ({
+    nameshort: `Popular Short #${i + 1}`,
+    shortviews: `${Math.floor(Math.random() * 100) + 20}k views • ${i + 1}d ago`,
+    photo: short,
+}));
+
+const shortsOldest = Array.from({ length: 150 }, (_, i) => ({
+    nameshort: `Oldest Short #${i + 1}`,
+    shortviews: `${Math.floor(Math.random() * 10) + 1}k views • ${50 - i}d ago`,
+    photo: short,
+}));
+
+const playlists = [
+    { namevideo: "Duki en vivo", videoviews: "100k views • 1d ago", photo: duki },
+    { namevideo: "Duki Freestyle", videoviews: "85k views • 2d ago", photo: duki },
+    { namevideo: "Duki Entrevista", videoviews: "60k views • 3d ago", photo: duki },
+    { namevideo: "Duki Backstage", videoviews: "45k views • 4d ago", photo: duki },
+    { namevideo: "Duki y Amigos", videoviews: "70k views • 5d ago", photo: duki },
+    { namevideo: "Duki en el Estudio", videoviews: "55k views • 6d ago", photo: duki },
+    { namevideo: "Duki Reaccionando", videoviews: "40k views • 7d ago", photo: duki },
+    { namevideo: "Duki en TV", videoviews: "30k views • 8d ago", photo: duki },
+    { namevideo: "Duki Documental", videoviews: "95k views • 9d ago", photo: duki },
+    { namevideo: "Duki Mejores Momentos", videoviews: "120k views • 10d ago", photo: duki },
+    { namevideo: "Duki en el Estadio", videoviews: "110k views • 11d ago", photo: duki },
+    { namevideo: "Duki Acústico", videoviews: "80k views • 12d ago", photo: duki },
+    { namevideo: "Duki en Radio", videoviews: "65k views • 13d ago", photo: duki },
+    { namevideo: "Duki Colaboraciones", videoviews: "90k views • 14d ago", photo: duki },
+    { namevideo: "Duki Sesión de Fotos", videoviews: "50k views • 15d ago", photo: duki },
+    { namevideo: "Duki en Premios", videoviews: "77k views • 16d ago", photo: duki },
+    { namevideo: "Duki en el Studio", videoviews: "58k views • 17d ago", photo: duki },
+    { namevideo: "Duki Preguntas y Respuestas", videoviews: "62k views • 18d ago", photo: duki },
+    { namevideo: "Duki Videoclip", videoviews: "130k views • 19d ago", photo: duki },
+    { namevideo: "Duki Ensayo", videoviews: "48k views • 20d ago", photo: duki },
+    { namevideo: "Duki Fans", videoviews: "73k views • 21d ago", photo: duki },
+    { namevideo: "Duki Viaje", videoviews: "67k views • 22d ago", photo: duki },
+    { namevideo: "Duki Making Of", videoviews: "52k views • 23d ago", photo: duki },
+    { namevideo: "Duki Top Canciones", videoviews: "140k views • 24d ago", photo: duki },
+    { namevideo: "Cabildo en vivo", videoviews: "90k views • 1d ago", photo: cabildo },
+    { namevideo: "Cabildo Freestyle", videoviews: "75k views • 2d ago", photo: cabildo },
+    { namevideo: "Cabildo Entrevista", videoviews: "50k views • 3d ago", photo: cabildo },
+    { namevideo: "Cabildo Backstage", videoviews: "35k views • 4d ago", photo: cabildo },
+    { namevideo: "Cabildo y Amigos", videoviews: "60k views • 5d ago", photo: cabildo },
+    { namevideo: "Cabildo en el Estudio", videoviews: "45k views • 6d ago", photo: cabildo },
+    { namevideo: "Cabildo Reaccionando", videoviews: "30k views • 7d ago", photo: cabildo },
+    { namevideo: "Cabildo en TV", videoviews: "20k views • 8d ago", photo: cabildo },
+    { namevideo: "Cabildo Documental", videoviews: "85k views • 9d ago", photo: cabildo },
+    { namevideo: "Cabildo Mejores Momentos", videoviews: "110k views • 10d ago", photo: cabildo },
+    { namevideo: "Cabildo en el Estadio", videoviews: "100k views • 11d ago", photo: cabildo },
+    { namevideo: "Cabildo Acústico", videoviews: "70k views • 12d ago", photo: cabildo },
+    { namevideo: "Cabildo en Radio", videoviews: "55k views • 13d ago", photo: cabildo },
+    { namevideo: "Cabildo Colaboraciones", videoviews: "80k views • 14d ago", photo: cabildo },
+    { namevideo: "Cabildo en Premios", videoviews: "67k views • 16d ago", photo: cabildo },
+    { namevideo: "Cabildo en el Studio", videoviews: "48k views • 17d ago", photo: cabildo },
+    { namevideo: "Cabildo Preguntas y Respuestas", videoviews: "52k views • 18d ago", photo: cabildo },
+    { namevideo: "Cabildo Videoclip", videoviews: "120k views • 19d ago", photo: cabildo },
+    { namevideo: "Cabildo Ensayo", videoviews: "38k views • 20d ago", photo: cabildo },
+    { namevideo: "Cabildo Fans", videoviews: "63k views • 21d ago", photo: cabildo },
+    { namevideo: "Cabildo Viaje", videoviews: "57k views • 22d ago", photo: cabildo },
+    { namevideo: "Cabildo Making Of", videoviews: "42k views • 23d ago", photo: cabildo },
+    { namevideo: "Cabildo Top Canciones", videoviews: "130k views • 24d ago", photo: cabildo },
+    { namevideo: "Cabildo Especial", videoviews: "10k views • 1d ago", photo: cabildo },
+];
+
+const iconos = [
+    { name: "Poll", src: poll },
+    { name: "Quiz", src: quiz },
+    { name: "Video", src: videoIcon },
+    { name: "Image", src: imageIcon },
+];
+
+const postVideos = [
+    {
+        id: 'rust-solo',
+        thumbnail: duki,
+        title: 'title of video – title of video – title of video – title of video',
+        description: 'Rust - Solo vs Clans'
+    },
+    {
+        id: 'cuphead-first',
+        thumbnail: duki,
+        title: 'title of video – title of video – title of video – title of video',
+        description: 'Cuphead - First Time'
+    },
+
+];
+
+const unpublishedVideos = [
+    {
+        id: 'video-1',
+        thumbnail: duki,
+        title: 'title of video – title of video – title of video – title of video',
+    },
+    {
+        id: 'video-2',
+        thumbnail: duki, 
+        title: 'another title – another title – another title – another title',
+    },
 ];
 
 const textfooter = [
@@ -251,9 +418,9 @@ const textfooter = [
 
 const leftMenu = [
     { icon: "home", text: "Home", link: "/index.html" },
-    
+
     { divider: true },
-    
+
     { icon: "radar", text: "Discover", link: "/discover/discover.html" },
     { icon: "celebration", text: "CaTube Party", link: "/party/party.html" },
     { icon: "school", text: "CaTube Education", link: "/education/education.html" },
@@ -274,4 +441,4 @@ const leftMenu = [
     { icon: "smart_display", text: "Your videos", link: "/studio/studio.html?section=content" },
 ];
 
-export { popularChannels, shorts, videos, textfooter, leftMenu, recommendedVideos, foryouvideos, shortsyc, videosyc, videoLatest };
+export { popularChannels, shorts, videos, textfooter, leftMenu, recommendedVideos, foryouvideos, shortsyc, videosyc, videoLatest, videoPopular, videoOldest, shortsLatest, shortsPopular, shortsOldest, playlists, iconos, postVideos, unpublishedVideos };

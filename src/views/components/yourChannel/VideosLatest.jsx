@@ -1,27 +1,42 @@
-import { videoLatest } from "../../../assets/data/Data";
 import ButtonCarousel from "../home/ButtonCarousel";
 import Container from "../home/Container";
 import Video from "../home/Video";
-import { useRef } from "react";
+import Short from "../home/Short";
 
-function VideosLatest(){
-        const videosLatestRef = useRef(null);
-        //  const videosToShow = videoLatest.slice(0, 24);
+function VideosLatest(props){
+    const renderItem = (item, index) => {
+        switch (props.type) {
+            case 'videos':
+                return (
+                    <Video
+                        key={index}
+                        namevideo={item.namevideo}
+                        videoviews={item.videoviews}
+                        photo={item.photo}
+                    />
+                );
+            case 'shorts':
+                return (
+                    <Short
+                        key={index}
+                        nameshort={item.nameshort}
+                        shortviews={item.shortviews}
+                        photo={item.photo}
+                    />
+                );
+            default:
+                return null;
+        }
+    };
+
     return(
-        <Container id="latestSection" className="content-table-videos">
+        <Container id={props.id} className={props.className}>
             <Container className="carousel-container">
-                <ButtonCarousel className="carousel-btn left" direction="left" carouselRef={videosLatestRef} />
-                <Container className="latest-container" id="recommendations-latest" ref={videosLatestRef}>
-                    {videoLatest.map((video, index) => (
-                        <Video
-                            key={index}
-                            photo={video.photo}
-                            namevideo={video.namevideo}
-                            videoviews={video.videoviews}
-                        />
-                    ))}
+                <ButtonCarousel className="carousel-btn left" direction="left" carouselRef={props.ref} />
+                <Container className={props.container} id="recommendations-latest" ref={props.ref}>
+                    {props.render.map((item, index) => renderItem(item, index))}
                 </Container>
-                <ButtonCarousel className="carousel-btn right" direction="right" carouselRef={videosLatestRef} />
+                <ButtonCarousel className="carousel-btn right" direction="right" carouselRef={props.ref} />
             </Container>
         </Container>
     );

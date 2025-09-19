@@ -1,6 +1,6 @@
 function NewButton(props){
     return(
-    <button className="btn">{props.btntitle}</button>
+    <button className={props.btnclass}>{props.btntitle || props.children}</button>
 
     );
 }

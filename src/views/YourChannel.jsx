@@ -8,6 +8,9 @@ import ContainerButton from "../views/components/yourChannel/ContainerButton";
 import HomeTab from "./components/yourChannel/HomeTab";
 import VideosTab from "./components/yourChannel/VideosTab";
 import { useState } from "react";
+import ShortsTab from "./components/yourChannel/ShortsTab";
+import Playlists from "./components/yourChannel/Playlists";
+import PostsTab from "./components/yourChannel/PostsTab";
 
 
 function YourChannel() {
@@ -16,9 +19,9 @@ function YourChannel() {
     const tabContents = [
         <HomeTab />,
         <VideosTab />,
-        <div>Contenido de la pestaña de Shorts</div>,
-        <div>Contenido de la pestaña de Playlists</div>,
-        <div>Contenido de la pestaña de Posts</div>
+        <ShortsTab />,
+        <Playlists />,
+        <PostsTab />
     ];
     return (
 
