@@ -30,6 +30,7 @@ import wildlife from "../media/thumbnails/wildlife.jpg"
 import cabildo from "../media/yourChannel_media/thumbnails/cabildo.png"
 import cjs from "../media/yourChannel_media/thumbnails/cjs.jpg"
 import duki from "../media/yourChannel_media/thumbnails/duki.jpeg"
+import pity from "../media/yourChannel_media/thumbnails/pity.jpg"  
 
 const popularChannels = [
     { name: "Angel", subs: "15k subs", photo: angelr },
@@ -171,6 +172,56 @@ const videosyc = [
     { namevideo: "Duki Mejores Momentos", videoviews: "120k views • 10d ago", photo: duki },
 ];
 
+const videoLatest = [
+    { namevideo: "Duki en vivo", videoviews: "100k views • 1d ago", photo: duki },
+    { namevideo: "Duki Freestyle", videoviews: "85k views • 2d ago", photo: duki },
+    { namevideo: "Duki Entrevista", videoviews: "60k views • 3d ago", photo: duki },
+    { namevideo: "Duki Backstage", videoviews: "45k views • 4d ago", photo: duki },
+    { namevideo: "Duki y Amigos", videoviews: "70k views • 5d ago", photo: duki },
+    { namevideo: "Duki en el Estudio", videoviews: "55k views • 6d ago", photo: duki },
+    { namevideo: "Duki Reaccionando", videoviews: "40k views • 7d ago", photo: duki },
+    { namevideo: "Duki en TV", videoviews: "30k views • 8d ago", photo: duki },
+    { namevideo: "Duki Documental", videoviews: "95k views • 9d ago", photo: duki },
+    { namevideo: "Duki Mejores Momentos", videoviews: "120k views • 10d ago", photo: duki },
+    { namevideo: "Duki en el Estadio", videoviews: "110k views • 11d ago", photo: duki },
+    { namevideo: "Duki Acústico", videoviews: "80k views • 12d ago", photo: duki },
+    { namevideo: "Duki en Radio", videoviews: "65k views • 13d ago", photo: duki },
+    { namevideo: "Duki Colaboraciones", videoviews: "90k views • 14d ago", photo: duki },
+    { namevideo: "Duki Sesión de Fotos", videoviews: "50k views • 15d ago", photo: duki },
+    { namevideo: "Duki en Premios", videoviews: "77k views • 16d ago", photo: duki },
+    { namevideo: "Duki en el Studio", videoviews: "58k views • 17d ago", photo: duki },
+    { namevideo: "Duki Preguntas y Respuestas", videoviews: "62k views • 18d ago", photo: duki },
+    { namevideo: "Duki Videoclip", videoviews: "130k views • 19d ago", photo: duki },
+    { namevideo: "Duki Ensayo", videoviews: "48k views • 20d ago", photo: duki },
+    { namevideo: "Duki Fans", videoviews: "73k views • 21d ago", photo: duki },
+    { namevideo: "Duki Viaje", videoviews: "67k views • 22d ago", photo: duki },
+    { namevideo: "Duki Making Of", videoviews: "52k views • 23d ago", photo: duki },
+    { namevideo: "Duki Top Canciones", videoviews: "140k views • 24d ago", photo: duki },
+    { namevideo: "Pity en vivo", videoviews: "90k views • 1d ago", photo: pity },
+    { namevideo: "Pity Freestyle", videoviews: "75k views • 2d ago", photo: pity },
+    { namevideo: "Pity Entrevista", videoviews: "50k views • 3d ago", photo: pity },
+    { namevideo: "Pity Backstage", videoviews: "35k views • 4d ago", photo: pity },
+    { namevideo: "Pity y Amigos", videoviews: "60k views • 5d ago", photo: pity },
+    { namevideo: "Pity en el Estudio", videoviews: "45k views • 6d ago", photo: pity },
+    { namevideo: "Pity Reaccionando", videoviews: "30k views • 7d ago", photo: pity },
+    { namevideo: "Pity en TV", videoviews: "20k views • 8d ago", photo: pity },
+    { namevideo: "Pity Documental", videoviews: "85k views • 9d ago", photo: pity },
+    { namevideo: "Pity Mejores Momentos", videoviews: "110k views • 10d ago", photo: pity },
+    { namevideo: "Pity en el Estadio", videoviews: "100k views • 11d ago", photo: pity },
+    { namevideo: "Pity Acústico", videoviews: "70k views • 12d ago", photo: pity },
+    { namevideo: "Pity en Radio", videoviews: "55k views • 13d ago", photo: pity },
+    { namevideo: "Pity Colaboraciones", videoviews: "80k views • 14d ago", photo: pity },
+    { namevideo: "Pity en Premios", videoviews: "67k views • 16d ago", photo: pity },
+    { namevideo: "Pity en el Studio", videoviews: "48k views • 17d ago", photo: pity },
+    { namevideo: "Pity Preguntas y Respuestas", videoviews: "52k views • 18d ago", photo: pity },
+    { namevideo: "Pity Videoclip", videoviews: "120k views • 19d ago", photo: pity },
+    { namevideo: "Pity Ensayo", videoviews: "38k views • 20d ago", photo: pity },
+    { namevideo: "Pity Fans", videoviews: "63k views • 21d ago", photo: pity },
+    { namevideo: "Pity Viaje", videoviews: "57k views • 22d ago", photo: pity },
+    { namevideo: "Pity Making Of", videoviews: "42k views • 23d ago", photo: pity },
+    { namevideo: "Pity Top Canciones", videoviews: "130k views • 24d ago", photo: pity },
+];
+
 const shortsyc = [
     { nameshort: "Cat Yoga Challenge", shortviews: "7k views • 1d ago", photo: cjs },
     { nameshort: "Epic Cat Jumps", shortviews: "15k views • 2d ago", photo: cjs },
@@ -223,4 +274,4 @@ const leftMenu = [
     { icon: "smart_display", text: "Your videos", link: "/studio/studio.html?section=content" },
 ];
 
-export { popularChannels, shorts, videos, textfooter, leftMenu, recommendedVideos, foryouvideos, shortsyc, videosyc };
+export { popularChannels, shorts, videos, textfooter, leftMenu, recommendedVideos, foryouvideos, shortsyc, videosyc, videoLatest };

@@ -1,12 +1,15 @@
-function ContainerButton() {
+function ContainerButton(props) {
+    if (!props.tabs || props.tabs.length === 0) {
+        return null;
+    }
     return (
-        <div className="container-button">
+        <div className={props.containerName}>
             <ul className="content-ul">
-                <li><button type="button" className="nav-btn active" data-section="homeSection">Home</button></li>
-                <li><button type="button" className="nav-btn" data-section="videosSection">Videos</button></li>
-                <li><button type="button" className="nav-btn" data-section="shortsSection">Shorts</button></li>
-                <li><button type="button" className="nav-btn" data-section="playlistsSection">Playlists</button></li>
-                <li><button type="button" className="nav-btn" data-section="postsSection">Posts</button></li>
+                {props.tabs.map((label, index) => (
+                    <li key={index}>
+                        <button type="button" className={`${props.buttonClass} ${props.activeTabIndex === index ? 'active' : ''}`} onClick={() => props.onTabClick(index)} > {label} </button>
+                    </li>
+                ))}
             </ul>
         </div>
     );

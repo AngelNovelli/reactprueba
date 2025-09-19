@@ -145,6 +145,7 @@ a {
   overflow: hidden;
   margin-top: 20px;
   aspect-ratio: 16 / 9;
+  margin-left: 10px;
 }
 
 .video-thumb:hover {

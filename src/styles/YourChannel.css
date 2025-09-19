@@ -5,20 +5,20 @@ body {
 .container-button,
 .container-channel,
 .content-ul li button {
-    background: var(--primary-color)
+    background: var(--primary-color);
 }
 
 .banner-container {
     display: flex;
     justify-content: center;
-    margin: 1rem
+    margin: 1rem;
 }
 
 .banner {
     width: 95%;
     height: 275px;
     object-fit: cover;
-    border-radius: 30px
+    border-radius: 30px;
 }
 
 .container-button,
@@ -28,32 +28,32 @@ body {
     height: auto;
     padding: 20px;
     margin: 1rem auto;
-    border-radius: 30px
+    border-radius: 30px;
 }
 
 .first-part-profile {
     display: flex;
     align-items: center;
-    gap: 20px
+    gap: 20px;
 }
 
 .container-button ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center
+    justify-content: center;
 }
 
 .row,
 .row-info {
     display: flex;
     gap: 20px;
-    justify-content: start
+    justify-content: start;
 }
 
 .row-info p {
     text-wrap: nowrap;
     margin-top: 10px;
-    margin-bottom: 10px
+    margin-bottom: 10px;
 }
 
 .row a {
@@ -77,7 +77,7 @@ body {
 .channel-photo {
     width: 199px;
     height: 199px;
-    border-radius: 50%
+    border-radius: 50%;
 }
 
 .customize-btn-channel,
@@ -90,18 +90,18 @@ body {
     padding: 10px;
     background-color: var(--primary-color);
     color: #777878;
-    text-wrap: nowrap
+    text-wrap: nowrap;
 }
 
 .customize-btn-channel:hover,
 .manage-btn-videos:hover {
-    color: var(--btn)
+    color: var(--btn);
 }
 
 .content-ul {
     display: flex;
     gap: 1rem;
-    list-style: none
+    list-style: none;
 }
 
 .nav-btn {
@@ -112,12 +112,12 @@ body {
     border: none;
     color: var(--text-color);
     padding: 12px 20px;
-    border-radius: 30px
+    border-radius: 30px;
 }
 
 .content-ul li button.active {
     background: var(--btn);
-    color: #1f1f20
+    color: #1f1f20;
 }
 
 .btn-channel:hover {
@@ -125,7 +125,7 @@ body {
 }
 
 .content-ul li button.active:hover {
-    background: var(--btn-dark)
+    background: var(--btn-dark);
 }
 
 .container-channel {
@@ -133,26 +133,37 @@ body {
     height: auto;
     padding: 20px;
     margin: 1rem auto;
-    border-radius: 30px
+    border-radius: 30px;
 }
 
 .container-row p,
 .video-channel-posts {
-    margin-right: 20px
+    margin-right: 20px;
 }
 
 .principal-video-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: start
+    justify-content: start;
+}
+
+.latest-container {
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    grid-auto-flow: column;
+    grid-auto-columns: calc(25% - 1.3rem);
+    gap: 1.3rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
 }
 
 .principal-video {
     width: 430px;
     height: 265px;
     border-radius: 30px;
-    background-color: #fff
+    background-color: #fff;
 }
 
 .text-principal-video {
@@ -160,17 +171,17 @@ body {
     margin-left: 30px;
     text-align: justify;
     width: 450px;
-    gap: 20px
+    gap: 20px;
 }
 
 .row-principal {
     display: flex;
     flex-direction: row;
-    gap: 30px
+    gap: 30px;
 }
 
 .text-channel p {
-    text-align: justify
+    text-align: justify;
 }
 
 .container-row-posts,
@@ -182,7 +193,7 @@ body {
 
 .container-row-posts {
     padding: 20px;
-    flex-direction: row
+    flex-direction: row;
 }
 
 .actual-icon-holder,
@@ -192,7 +203,7 @@ body {
     justify-content: center;
     gap: 40px;
     flex-grow: 1;
-    min-width: 0
+    min-width: 0;
 }
 
 .icon {
@@ -213,19 +224,19 @@ body {
 .row-icons-buttons {
     align-items: center;
     width: 100%;
-    flex-wrap: nowrap
+    flex-wrap: nowrap;
 }
 
 .center {
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
 }
 
 .posts-footer {
     display: flex;
     flex-direction: column;
-    align-items: stretch
+    align-items: stretch;
 }
 
 .space {
@@ -234,11 +245,11 @@ body {
 }
 
 .options {
-    margin-top: 20px
+    margin-top: 20px;
 }
 
 .options {
-    padding: 10px
+    padding: 10px;
 }
 
 .container-row {
@@ -259,7 +270,7 @@ body {
 .btn-trash {
     background: #1f1f20;
     border-radius: 30px;
-    border: none
+    border: none;
 }
 
 .btn-trash {
@@ -267,7 +278,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 43px;
-    height: 43px
+    height: 43px;
 }
 
 .btn-trash:hover,
@@ -279,7 +290,7 @@ body {
 .video-main-content {
     display: flex;
     height: auto;
-    padding: 20px
+    padding: 20px;
 }
 
 .postsOptions {
@@ -313,40 +324,40 @@ body {
     width: 95%;
     margin: 1rem auto;
     border-radius: 30px;
-    background-color: var(--primary-color)
+    background-color: var(--primary-color);
 }
 
 .container-row-posts p {
-    color: var(--btn)
+    color: var(--btn);
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
     .banner {
         height: auto;
-        aspect-ratio: 16/9
+        aspect-ratio: 16/9;
     }
 
     .container-profile {
-        flex-direction: column
+        flex-direction: column;
     }
 
     .text-principal-video {
-        margin-left: 0
+        margin-left: 0;
     }
 
     .principal-video {
         width: 100%;
-        height: auto
+        height: auto;
     }
 
     .first-part-profile {
         flex-direction: column;
-        align-items: center
+        align-items: center;
     }
 
     .channel-photo {
         width: 100px;
-        height: 100px
+        height: 100px;
     }
 
     .content-ul {
@@ -390,19 +401,19 @@ body {
     }
 }
 
-@media (max-width:1100px) {
+@media (max-width: 1100px) {
     .principal-video-container {
-        justify-content: center
+        justify-content: center;
     }
 
     .container-profile {
         flex-direction: column;
-        justify-content: center
+        justify-content: center;
     }
 
     .row {
         justify-content: center;
-        margin-top: 20px
+        margin-top: 20px;
     }
 
     .text-principal-video h2 {
