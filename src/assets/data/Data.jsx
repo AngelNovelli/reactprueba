@@ -402,6 +402,22 @@ const unpublishedVideos = [
     },
 ];
 
+const trending = [
+    { title: "Epic Cat Tricks", nombre: "CatMaster", vistas: "12k views", ano: "1 year", description: "Watch these cats perform amazing tricks!" },
+    { title: "Cooking with Laura", nombre: "LauraChef", vistas: "8.5k views", ano: "2 years", description: "Delicious recipes and cooking tips from Laura." },
+    { title: "Travel Vlog: Japan", nombre: "WanderWorld", vistas: "20k views", ano: "3 years", description: "Join us as we explore the wonders of Japan." },
+    { title: "Tech Unboxing 2024", nombre: "TechGuru", vistas: "15k views", ano: "6 months", description: "Unboxing and reviewing the latest gadgets." },
+    { title: "Funny Dog Moments", nombre: "DogLover", vistas: "30k views", ano: "2 weeks", description: "A compilation of the funniest dog moments." },
+    { title: "Fitness at Home", nombre: "FitLife", vistas: "5k views", ano: "4 months", description: "Easy home workouts for everyone." },
+    { title: "Art Tutorial: Watercolor", nombre: "ArtByAna", vistas: "3.2k views", ano: "1 month", description: "Step-by-step watercolor painting tutorial." }
+]
+
+const trendingshorts = Array.from({ length: 30 }, (_, i) => ({
+    nameshort: `Trending Short #${i + 1}`,
+    shortviews: `${Math.floor(Math.random() * 50) + 10}k views • ${i + 1}d ago`,
+    photo: short,
+}));
+
 const textfooter = [
     { textfooter: "About" },
     { textfooter: "Press" },
@@ -441,4 +457,4 @@ const leftMenu = [
     { icon: "smart_display", text: "Your videos", link: "/studio/studio.html?section=content" },
 ];
 
-export { popularChannels, shorts, videos, textfooter, leftMenu, recommendedVideos, foryouvideos, shortsyc, videosyc, videoLatest, videoPopular, videoOldest, shortsLatest, shortsPopular, shortsOldest, playlists, iconos, postVideos, unpublishedVideos };
+export { popularChannels, shorts, videos, textfooter, leftMenu, recommendedVideos, foryouvideos, shortsyc, videosyc, videoLatest, videoPopular, videoOldest, shortsLatest, shortsPopular, shortsOldest, playlists, iconos, postVideos, unpublishedVideos, trending, trendingshorts };
