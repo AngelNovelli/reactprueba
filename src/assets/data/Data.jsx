@@ -418,6 +418,58 @@ const trendingshorts = Array.from({ length: 30 }, (_, i) => ({
     photo: short,
 }));
 
+const catscribersshorts = Array.from({ length: 30 }, (_, i) => ({
+    nameshort: `Catscribers Short #${i + 1}`,
+    shortviews: `${Math.floor(Math.random() * 50) + 10}k views • ${i + 1}d ago`,
+    photo: short,
+}));
+
+const educationshorts = Array.from({ length: 30 }, (_, i) => ({
+    nameshort: `Education Short #${i + 1}`,
+    shortviews: `${Math.floor(Math.random() * 50) + 10}k views • ${i + 1}d ago`,
+    photo: short,
+}));
+
+const historyvideo = Array.from({ length: 30 }, (_, i) => ({
+    namevideo: `History Video #${i + 1}`,
+    videoviews: `${Math.floor(Math.random() * 50) + 10}k views • ${i + 1}d ago`,
+    photo: cabildo,
+}));
+
+const playlistvideo = Array.from({ length: 30 }, (_, i) => ({
+    namevideo: `Playlists Video #${i + 1}`,
+    videoviews: `${Math.floor(Math.random() * 50) + 10}k views • ${i + 1}d ago`,
+    photo: duki,
+}));
+
+const viewlatervideo = Array.from({ length: 30 }, (_, i) => ({
+    namevideo: `View Later Video #${i + 1}`,
+    videoviews: `${Math.floor(Math.random() * 50) + 10}k views • ${i + 1}d ago`,
+    photo: frogjumping,
+}));
+
+const likedvideo = Array.from({ length: 30 }, (_, i) => ({
+    namevideo: `Liked Video #${i + 1}`,
+    videoviews: `${Math.floor(Math.random() * 50) + 10}k views • ${i + 1}d ago`,
+    photo: rabbits,
+}));
+
+const myPlaylistsData = Array.from({ length: 12 }, (_, i) => ({
+    id: `pl-${String(i + 1).padStart(3, '0')}`,
+    thumbnail: duki,
+    videoCount: Math.floor(Math.random() * 50) + 1,
+    name: `Playlist #${i + 1}`,
+    visibility: i % 2 === 0 ? 'public' : 'private',
+}));
+
+const ViewLaterData = Array.from({ length: 12 }, (_, i) => ({
+    id: `pl-${String(i + 1).padStart(3, '0')}`,
+    thumbnail: cabildo,
+    videoCount: Math.floor(Math.random() * 50) + 1,
+    name: `View Later #${i + 1}`,
+    visibility: i % 2 === 0 ? 'public' : 'private',
+}));
+
 const textfooter = [
     { textfooter: "About" },
     { textfooter: "Press" },
@@ -457,4 +509,4 @@ const leftMenu = [
     { icon: "smart_display", text: "Your videos", link: "/studio/studio.html?section=content" },
 ];
 
-export { popularChannels, shorts, videos, textfooter, leftMenu, recommendedVideos, foryouvideos, shortsyc, videosyc, videoLatest, videoPopular, videoOldest, shortsLatest, shortsPopular, shortsOldest, playlists, iconos, postVideos, unpublishedVideos, trending, trendingshorts };
+export { popularChannels, shorts, videos, textfooter, leftMenu, recommendedVideos, foryouvideos, shortsyc, videosyc, videoLatest, videoPopular, videoOldest, shortsLatest, shortsPopular, shortsOldest, playlists, iconos, postVideos, unpublishedVideos, trending, trendingshorts, catscribersshorts, educationshorts, historyvideo, likedvideo, viewlatervideo, playlistvideo, myPlaylistsData, ViewLaterData };
