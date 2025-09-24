@@ -36,6 +36,9 @@ import imageIcon from "../media/yourChannel_media/Image-icon.png"
 import poll from "../media/yourChannel_media/Poll-icon.png"
 import quiz from "../media/yourChannel_media/Quiz-icon.png"
 import videoIcon from "../media/yourChannel_media/Video-icon.png"
+import likesIcon from "../media/studio_media/likes.png"
+import commentsIcon from "../media/studio_media/comments.png"
+import analyticsIcon from "../media/studio_media/analytics.png"
 
 const popularChannels = [
     { name: "Angel", subs: "15k subs", photo: angelr },
@@ -397,7 +400,7 @@ const unpublishedVideos = [
     },
     {
         id: 'video-2',
-        thumbnail: duki, 
+        thumbnail: duki,
         title: 'another title – another title – another title – another title',
     },
 ];
@@ -470,6 +473,56 @@ const ViewLaterData = Array.from({ length: 12 }, (_, i) => ({
     visibility: i % 2 === 0 ? 'public' : 'private',
 }));
 
+const recentSubscribers = [
+        { id: 'sub1', photo: angelr, username: '@angel_dev', subscriberCount: '15k subscribers' },
+        { id: 'sub2', photo: thiagor, username: '@thiago_js', subscriberCount: '22k subscribers' },
+        { id: 'sub3', photo: genar, username: '@gena_pro', subscriberCount: '12k subscribers' },
+        { id: 'sub4', photo: jerer, username: '@jeremias_art', subscriberCount: '5k subscribers' },
+        { id: 'sub5', photo: jonas, username: '@user5', subscriberCount: '3k subscribers' },
+        { id: 'sub6', photo: david, username: '@user6', subscriberCount: '18k subscribers' },
+        { id: 'sub7', photo: nicolas, username: '@user7', subscriberCount: '9k subscribers' },
+        { id: 'sub8', photo: tiziano, username: '@user8', subscriberCount: '2k subscribers' },
+        { id: 'sub9', photo: aramis, username: '@user9', subscriberCount: '31k subscribers' },
+    ]
+
+const latestCommentsData = [
+    {
+        id: 'comment-1', 
+        userPhoto: angelr,
+        username: '@user1',
+        message: '¡Qué gran video! Me encantó la edición.',
+        videoThumbnail: duki
+    },
+    {
+        id: 'comment-2',
+        userPhoto: thiagor, 
+        username: '@user2',
+        message: '¿Cuál es la canción del minuto 3:45?',
+        videoThumbnail: duki
+    },
+    {
+        id: 'comment-3',
+        userPhoto: genar,
+        username: '@user3',
+        message: '¡Saludos desde Argentina!',
+        videoThumbnail: duki
+    },
+    {
+        id: 'comment-4',
+        userPhoto: jerer,
+        username: '@user4',
+        message: 'No estoy de acuerdo con este punto, pero buen video.',
+        videoThumbnail: duki
+    },
+    {
+        id: 'comment-5',
+        userPhoto: jonas,
+        username: '@user5',
+        message: 'Gracias por el tutorial, me sirvió mucho.',
+        videoThumbnail: duki
+    }
+];  
+
 const textfooter = [
     { textfooter: "About" },
     { textfooter: "Press" },
@@ -509,9 +562,15 @@ const leftMenu = [
     { icon: "smart_display", text: "Your videos", link: "/studio/studio.html?section=content" },
 ];
 
+const latesVideoIcons = [
+    { id: 'likes', icon: likesIcon, count: 12500, alt: 'Likes' },
+    { id: 'comments', icon: commentsIcon, count: 873, alt: 'Comments' },
+    { id: 'analytics', icon: analyticsIcon, count: 45200, alt: 'Analytics' }
+];
+
 const leftMenuStudio = [
     {
-        id: 'dashboard', 
+        id: 'dashboard',
         icon: 'dashboard',
         text: 'Dashboard',
     },
@@ -548,4 +607,4 @@ const leftMenuStudio = [
 ];
 
 
-export { popularChannels, shorts, videos, textfooter, leftMenu, recommendedVideos, foryouvideos, shortsyc, videosyc, videoLatest, videoPopular, videoOldest, shortsLatest, shortsPopular, shortsOldest, playlists, iconos, postVideos, unpublishedVideos, trending, trendingshorts, catscribersshorts, educationshorts, historyvideo, likedvideo, viewlatervideo, playlistvideo, myPlaylistsData, ViewLaterData, leftMenuStudio };
+export { popularChannels, shorts, videos, textfooter, leftMenu, recommendedVideos, foryouvideos, shortsyc, videosyc, videoLatest, videoPopular, videoOldest, shortsLatest, shortsPopular, shortsOldest, playlists, iconos, postVideos, unpublishedVideos, trending, trendingshorts, catscribersshorts, educationshorts, historyvideo, likedvideo, viewlatervideo, playlistvideo, myPlaylistsData, ViewLaterData, leftMenuStudio, recentSubscribers, latestCommentsData, latesVideoIcons };

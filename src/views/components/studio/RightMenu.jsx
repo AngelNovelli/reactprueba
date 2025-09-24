@@ -1,7 +1,9 @@
+import angel from "../../../assets/media/profile/angel.jpg"
+
 function RightMenu() {
     return (
-        <div class="right-menu">
-            <img src="../media/home_media/profile/angel.jpg" alt="angel"></img>
+        <div className="right-menu">
+            <img src={angel} alt="angel" />
             <h1>Channel Name</h1>
         </div>
     );
