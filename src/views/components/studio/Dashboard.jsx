@@ -12,13 +12,13 @@ function Dashboard() {
             <Container className="content">
                 <Container className="cards-container">
                     <Container className="three-cards">
-                       <LatestVideo></LatestVideo>
+                        <LatestVideo></LatestVideo>
                         <LatestComments></LatestComments>
                         <RecentCatscribers totalsubs="105.000"></RecentCatscribers>
                     </Container>
                 </Container>
             </Container>
-            </>
+        </>
     );
 }
 

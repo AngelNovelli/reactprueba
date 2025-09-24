@@ -1,6 +1,16 @@
-function Community(){
-    return( 
-        <div>Community</div>
+import Container from "../home/Container";
+import Title from "../Trending/Title";
+import VideoCommunity from "./VideoCommunity";
+
+function Community() {
+    return (
+        <>
+            <Title title="Community"></Title>
+            <hr></hr>
+            <Container className="content">
+                    <VideoCommunity></VideoCommunity>
+            </Container>
+        </>
     );
 }
 
