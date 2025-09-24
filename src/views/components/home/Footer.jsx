@@ -4,10 +4,10 @@ import FooterText from './FooterText.jsx'
 import Container from './Container.jsx'
 import { textfooter } from '../../../assets/data/Data.jsx';
 
-function Footer() {
+function Footer(props) {
     return (
-        <Container className="footer">
-            <UlContainer>
+        <Container className={props.footer}>
+            <UlContainer className="menu-elem">
                 {textfooter.map((footer, index) => (
                     <FooterItem
                         key={index}

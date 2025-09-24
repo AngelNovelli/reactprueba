@@ -509,4 +509,43 @@ const leftMenu = [
     { icon: "smart_display", text: "Your videos", link: "/studio/studio.html?section=content" },
 ];
 
-export { popularChannels, shorts, videos, textfooter, leftMenu, recommendedVideos, foryouvideos, shortsyc, videosyc, videoLatest, videoPopular, videoOldest, shortsLatest, shortsPopular, shortsOldest, playlists, iconos, postVideos, unpublishedVideos, trending, trendingshorts, catscribersshorts, educationshorts, historyvideo, likedvideo, viewlatervideo, playlistvideo, myPlaylistsData, ViewLaterData };
+const leftMenuStudio = [
+    {
+        id: 'dashboard', 
+        icon: 'dashboard',
+        text: 'Dashboard',
+    },
+    {
+        id: 'content',
+        icon: 'slideshow',
+        text: 'Content',
+    },
+    {
+        id: 'analytics',
+        icon: 'analytics',
+        text: 'Analytics',
+    },
+    {
+        id: 'community',
+        icon: 'groups',
+        text: 'Community',
+    },
+    {
+        id: 'store',
+        icon: 'store',
+        text: 'Store'
+    },
+    {
+        id: 'earn',
+        icon: 'payments',
+        text: 'Earn'
+    },
+    {
+        id: 'customization',
+        icon: 'colorize',
+        text: 'Customization'
+    }
+];
+
+
+export { popularChannels, shorts, videos, textfooter, leftMenu, recommendedVideos, foryouvideos, shortsyc, videosyc, videoLatest, videoPopular, videoOldest, shortsLatest, shortsPopular, shortsOldest, playlists, iconos, postVideos, unpublishedVideos, trending, trendingshorts, catscribersshorts, educationshorts, historyvideo, likedvideo, viewlatervideo, playlistvideo, myPlaylistsData, ViewLaterData, leftMenuStudio };

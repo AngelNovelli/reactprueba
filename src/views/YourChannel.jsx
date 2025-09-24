@@ -11,6 +11,7 @@ import { useState } from "react";
 import ShortsTab from "./components/yourChannel/ShortsTab";
 import Playlists from "./components/yourChannel/Playlists";
 import PostsTab from "./components/yourChannel/PostsTab";
+import Footer from "./components/home/Footer";
 
 
 function YourChannel() {
@@ -38,6 +39,7 @@ function YourChannel() {
                     <div className="tab-content-container">
                         {tabContents[activeTab]}
                     </div>
+                    <Footer footer="footer"></Footer>
                 </main>
             </body>
         </>

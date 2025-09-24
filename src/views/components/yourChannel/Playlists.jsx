@@ -13,7 +13,6 @@ function Playlists (){
         <Container className="video-main-content">
         <VideosLatest render= {playlists} id="playlistsSection" className="content-table" container="latest-container" ref={playlistsRef} type="videos"/>
         </Container>
-        <Footer/>
         </>
     );
 }

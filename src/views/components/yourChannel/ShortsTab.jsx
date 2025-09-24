@@ -27,7 +27,6 @@ function ShortsTab (){
                         {tabContents[activeTab]}
         </div>
         </Container>
-        <Footer></Footer>
         </>
     );
 }

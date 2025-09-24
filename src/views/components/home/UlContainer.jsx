@@ -1,7 +1,7 @@
-function UlContainer({children}) {
+function UlContainer(props) {
     return (
-        <ul className="menu-elem">
-            {children}
+        <ul className={props.className}>
+            {props.children}
         </ul>
     );
 }

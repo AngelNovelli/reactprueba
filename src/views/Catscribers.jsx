@@ -21,7 +21,7 @@ function Catscribers(){
                     <Sections section="trending-shorts" subtitle="Shorts" ref={shortsRef} render={catscribersshorts} type="short"></Sections>
                     <Recommendations />
                     <Ads/>
-                    <Footer></Footer>
+                    <Footer footer="footer"></Footer>
                 </main>
             </body>
         </>

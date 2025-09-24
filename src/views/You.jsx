@@ -30,7 +30,7 @@ function You() {
                     <Sectionyou btnclass="btn-viewall-playlists" btntitle="View more" section="trending" subtitle="Playlists" ref={PlaylistRef} render={playlistvideo} expandedContent={<ViewMoreAllSection render={myPlaylistsData}/>}>   </Sectionyou>
                     <Sectionyou btnclass="btn-viewall-playlists" btntitle="View all" section="trending" subtitle="View Later" ref={ViewLaterRef} render={viewlatervideo} expandedContent={<ViewMoreAllSection render={ViewLaterData} />}> </Sectionyou>
                     <Sections section="trending" subtitle="Liked" ref={LikedRef} render={likedvideo} type="video" ></Sections>
-                    <Footer></Footer>
+                    <Footer footer="footer"></Footer>
                 </main>
             </body>
         </>

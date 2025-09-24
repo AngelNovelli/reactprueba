@@ -22,7 +22,6 @@ function PublishedContent() {
                     </Container>
                 </Container>
                 <RowButtons btntitle="Archive post" name="delete" src={deleted} ></RowButtons>
-
             </Container>
         </Container>
     );

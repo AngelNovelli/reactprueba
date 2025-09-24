@@ -27,7 +27,7 @@ function Home() {
 
           <Ads />
 
-          <Footer />
+          <Footer footer="footer"></Footer>
         </main>
       </body>
     </>

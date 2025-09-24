@@ -23,7 +23,7 @@ function Education() {
                         <VideoCard></VideoCard>
                     </Block>
                     <Sections section="trending-shorts" subtitle="Education Shorts" ref={shortsRef} render={educationshorts} type="short"></Sections>
-                    <Footer></Footer>
+                    <Footer footer="footer"></Footer>
                 </main>
             </body>
         </>

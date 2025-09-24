@@ -24,7 +24,7 @@ function Trending (){
                     <Block section="trending-videos" subtitle="Trending Videos">
                         <VideoCard></VideoCard>
                     </Block>
-                    <Footer></Footer>
+                    <Footer footer="footer"></Footer>
                 </main>
             </body>
         </>

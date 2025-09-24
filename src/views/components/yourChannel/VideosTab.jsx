@@ -27,7 +27,6 @@ function VideosTab() {
                         {tabContents[activeTab]}
         </div>
         </Container>
-        <Footer></Footer>
         </>
     );
 }
