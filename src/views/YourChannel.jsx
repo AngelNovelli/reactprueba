@@ -1,7 +1,7 @@
 import "../styles/YourChannel.css";
 import "../styles/Home.css";
 import "../styles/Global_components.css"
-import Sidebar from "../views/components/home/Sidebar";
+import Sidebar from "../views/components/hooks/Sidebar";
 import Banner from "../views/components/yourChannel/Banner";
 import Profile from "../views/components/yourChannel/Profile";
 import ContainerButton from "../views/components/yourChannel/ContainerButton";
@@ -11,8 +11,7 @@ import { useState } from "react";
 import ShortsTab from "./components/yourChannel/ShortsTab";
 import Playlists from "./components/yourChannel/Playlists";
 import PostsTab from "./components/yourChannel/PostsTab";
-import Footer from "./components/home/Footer";
-
+import Footer from "./components/hooks/Footer.jsx";
 
 function YourChannel() {
     const tabLabels = ['Home', 'Videos', 'Shorts', 'Playlists', 'Posts'];
@@ -30,7 +29,6 @@ function YourChannel() {
             <body>
                 <Sidebar>
                 </Sidebar>
-
                 <main className="main-content">
                     <Banner></Banner>
                     <Profile></Profile>

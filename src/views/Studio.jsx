@@ -3,14 +3,14 @@ import "../styles/Home.css";
 import "../styles/Global_components.css";
 import "../styles/Studio.css";
 import SidebarStudio from "./components/studio/SidebardStudio.jsx";
-import Footer from "./components/home/Footer.jsx";
+import Footer from "./components/hooks/Footer.jsx";
 import Dashboard from "./components/studio/Dashboard.jsx";
 import Content from "./components/studio/Content.jsx";
 import Analytics from "./components/studio/Analytics.jsx";
 import Community from "./components/studio/Community.jsx";
 import Store from "./components/studio/Store.jsx";
-import Earn from "./components/studio/Earn.jsx";
-import Customization from "./components/studio/Customization.jsx";
+import Earn from "./components/studio/earn/Earn.jsx";
+import Customization from "./components/studio/customization/Customization.jsx";
 import RightMenu from "./components/studio/RightMenu.jsx";
 import { useState } from "react";
 

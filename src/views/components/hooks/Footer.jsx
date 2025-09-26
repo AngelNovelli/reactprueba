@@ -1,6 +1,6 @@
-import FooterItem  from './FooterItem.jsx'
-import UlContainer from './UlContainer.jsx'
-import FooterText from './FooterText.jsx'
+import FooterItem  from '../home/FooterItem.jsx'
+import UlContainer from '../home/UlContainer.jsx'
+import FooterText from '../home/FooterText.jsx'
 import Container from './Container.jsx'
 import { textfooter } from '../../../assets/data/Data.jsx';
 

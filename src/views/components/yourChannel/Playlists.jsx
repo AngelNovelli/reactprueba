@@ -1,6 +1,5 @@
-import Container from "../home/Container";
+import Container from "../hooks/Container";
 import VideosLatest from "./VideosLatest";
-import Footer from "../home/Footer";
 import { playlists } from "../../../assets/data/Data";
 import { useRef } from "react";
 

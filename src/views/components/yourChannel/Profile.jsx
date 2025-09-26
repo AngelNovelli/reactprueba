@@ -1,27 +1,28 @@
-import angel from "../../../assets/media/profile/angel.jpg"
+import { profile } from "../../../assets/data/Data"
+import NewButton from "../home/Button";
 
 function Profile() {
     return (
-    <div class="container-profile">
-        <div class="first-part-profile">
-            <img class="channel-photo" src={angel} alt="angel" />
-            <div class="text-channel">
-                <h2>Channel name</h2>
-                <div class="row-info">
-                    <p class="space">@name</p>
-                    <p class="space">0 Catscribers</p>
-                    <p class="space">0 videos</p>
+    <div className="container-profile">
+        <div className="first-part-profile">
+            <img className="channel-photo" src={profile.src} alt={profile.name} />
+            <div className="text-channel">
+                <h2>{profile.name} </h2>
+                <div className="row-info">
+                    <p className="space">{profile.handle} </p>
+                    <p className="space">{profile.subs} </p>
+                    <p className="space">{profile.videos} </p>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dolorem magnam fuga cupiditate aut
-                    illum ratione quidem aliquid, magni fugit tempora molestias quo alias possimus delectus sunt sequi, quaerat
-                    quasi?</p>
+                <p>{profile.description} </p>
             </div>
         </div>
-        <div class="row">
-            <a href="/studio/studio.html?section=customization" class="customize-btn-channel">
-                <button class="customize-btn-channel">Customize channel</button>
+        <div className="row">
+            <a href="/studio/studio.html?section=customization" className="customize-btn-channel">
+            <NewButton btnclass="customize-btn-channel" btntitle="Customize channel"></NewButton>
             </a>
-            <a href="/studio/studio.html?section=content"><button class="manage-btn-videos">Manage videos</button></a>
+            <a href="/studio/studio.html?section=content">
+            <NewButton btnclass="manage-btn-videos" btntitle="Manage videos"></NewButton>
+            </a>
         </div>
     </div>
     );

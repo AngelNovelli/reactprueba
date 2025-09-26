@@ -1452,6 +1452,32 @@ const latestCommentsData = [
     },
 ];
 
+export const youProfile = {
+src: angel, 
+name: "Angel Novelli", 
+handle:"@angel", 
+subs: "15.000 Catscribers", 
+videos: "5 videos", 
+description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dolorem magnam fuga cupiditate autillum ratione quidem aliquid, magni fugit tempora molestias quo alias possimus delectus sunt sequi, quaerat quasi"
+}
+
+export const profile = {
+src: angel, 
+name: "Angel Novelli", 
+handle:"@angel", 
+subs: "15.000 Catscribers", 
+videos: "5 videos", 
+description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dolorem magnam fuga cupiditate autillum ratione quidem aliquid, magni fugit tempora molestias quo alias possimus delectus sunt sequi, quaerat quasi"
+}
+
+export const containerChannel = {
+    src: cabildo,
+    name: "Cabildo de Bs As",
+    views: "60.000 views",
+    time: "2 years ago",
+    description: "Cabildo de Bs As, Argentina"
+}
+
 const videoCommunityData = [
     {
         thumbnail: duki,
@@ -1565,10 +1591,10 @@ const leftMenu = [
     { divider: true },
 
     { icon: "account_circle", text: "You", link: "/you/you.html" },
-    { icon: "history", text: "History", link: "/you/you.html" },
-    { icon: "playlist_play", text: "Playlist", link: "/you/you.html" },
-    { icon: "schedule", text: "View later", link: "/you/you.html" },
-    { icon: "favorite", text: "Liked", link: "/you/you.html" },
+    { icon: "history", text: "History", link: "/you/you.html", isSubmenu: true },
+    { icon: "playlist_play", text: "Playlist", link: "/you/you.html", isSubmenu: true },
+    { icon: "schedule", text: "View later", link: "/you/you.html", isSubmenu: true },
+    { icon: "favorite", text: "Liked", link: "/you/you.html", isSubmenu: true },
     {
         icon: "smart_display",
         text: "Your videos",

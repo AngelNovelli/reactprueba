@@ -1,7 +1,6 @@
 import ContainerButton from "./ContainerButton"
 import VideosLatest from "./VideosLatest";
-import Container from "../home/Container";
-import Footer from "../home/Footer";
+import Container from "../hooks/Container";
 import { useState } from "react";
 import { useRef } from "react";
 import { videoLatest, videoOldest, videoPopular } from "../../../assets/data/Data";

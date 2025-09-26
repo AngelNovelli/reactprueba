@@ -1,5 +1,5 @@
 import Video from '../home/Video.jsx'
-import Container from '../home/Container.jsx'
+import Container from '../hooks/Container.jsx'
 import Subtitle from '../home/Subtitle.jsx'
 import ButtonCarousel from '../home/ButtonCarousel.jsx'
 import NewButton from '../home/Button.jsx'

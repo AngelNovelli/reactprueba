@@ -1,19 +1,19 @@
-import foto from '../../../assets/media/yourChannel_media/thumbnails/cabildo.png'
+import { containerChannel } from '../../../assets/data/Data';
 
 function ContainerChannel() {
     return (
         <div className="container-channel">
             <div className="principal-video-container">
-                <div className="principal-video"> <img className="principal-video" src={foto} alt="mini"></img> </div>
+                <div className="principal-video">
+                    <img className="principal-video" src={containerChannel.src} alt={containerChannel.name}></img>
+                </div>
                 <div className="text-principal-video">
-                    <h2>Title of video</h2>
+                    <h2>{containerChannel.name}</h2>
                     <div className="row-principal">
-                        <p className="space">0 views</p>
-                        <p className="space">0 years ago</p>
+                        <p className="space">{containerChannel.views}</p>
+                        <p className="space">{containerChannel.time}</p>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat asperiores voluptatibus laboriosam
-                        consectetur quidem assumenda expedita et, culpa temporibus laborum nulla. Fugit sapiente blanditiis nulla
-                        repellendus </p>
+                    <p>{containerChannel.description}</p>
                 </div>
             </div>
         </div>

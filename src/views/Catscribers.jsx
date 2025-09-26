@@ -1,10 +1,10 @@
-import Sidebar from "./components/home/Sidebar";
+import Sidebar from "../views/components/hooks/Sidebar";
 import Sections from "./components/home/Sections";
 import { useRef } from 'react';
 import { catscribersshorts } from "../assets/data/Data";
 import Recommendations from "./components/home/Recommendations"
 import Ads from "./components/home/Ads"
-import Footer from "./components/home/Footer";
+import Footer from "./components/hooks/Footer.jsx";
 import '../styles/Global_components.css'
 import '../styles/Home.css'
 import '../styles/Trending.css'

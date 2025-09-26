@@ -1,8 +1,8 @@
 import '../styles/Home.css'
 import '../styles/Global_components.css'
 import Ads from './components/home/Ads.jsx'
-import Sidebar from './components/home/Sidebar.jsx'
-import Footer from './components/home/Footer.jsx'
+import Sidebar from "../views/components/hooks/Sidebar";
+import Footer from "./components/hooks/Footer.jsx";
 import Recommendations from './components/home/Recommendations.jsx'
 import Sections from './components/home/Sections.jsx'
 import { popularChannels, shorts, videos } from '../assets/data/Data.jsx';

@@ -1,4 +1,4 @@
-import Container from "../home/Container";
+import Container from "../hooks/Container";
 import RowButtons from "./RowButtons";
 import deleted from "../../../assets/media/yourChannel_media/Delete.png"
 

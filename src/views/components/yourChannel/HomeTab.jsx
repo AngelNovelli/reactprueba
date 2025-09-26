@@ -1,8 +1,6 @@
-
-import Container from "../../components/home/Container";
+import Container from "../../components/hooks/Container";
 import ContainerChannel from "../../components/yourChannel/ContainerChannel";
 import Sections from "../../components/home/Sections"
-import Footer from "../../components/home/Footer"
 import { useRef } from "react";
 import { foryouvideos, shortsyc, videosyc } from "../../../assets/data/Data";
 

@@ -1,6 +1,6 @@
 import RowButtons from "./RowButtons";
 import deleted from "../../../assets/media/yourChannel_media/Delete.png"
-import Container from "../home/Container";
+import Container from "../hooks/Container";
 import PostVideoLink from "./PostVideoLink";
 import { unpublishedVideos } from "../../../assets/data/Data";
 

@@ -189,6 +189,10 @@ a {
   display: none;
 }
 
+.sidebar:not(.collapsed) .submenu-item .nav-link {
+  margin-left: 30px; 
+}
+
 /*------------Responsive-----------*/
 
 @media (max-width: 1200px) {

@@ -1,4 +1,4 @@
-import Container from '../home/Container.jsx'
+import Container from '../hooks/Container.jsx'
 import Subtitle from '../home/Subtitle.jsx'
 import Video from '../home/Video.jsx'
 import { recommendedVideos } from '../../../assets/data/Data.jsx';

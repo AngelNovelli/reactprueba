@@ -1,4 +1,4 @@
-import Container from "../home/Container";
+import Container from "../hooks/Container";
 import LcaCommunity from "./LcaCommunity"
 import { videoCommunityData } from "../../../assets/data/Data";
 
