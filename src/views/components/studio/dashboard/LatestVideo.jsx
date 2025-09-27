@@ -1,14 +1,14 @@
-import { latesVideoIcons } from "../../../assets/data/Data";
-import duki from "../../../assets/media/yourChannel_media/thumbnails/duki.jpeg"
-import Container from "../hooks/Container";
-import Subtitle from "../home/Subtitle";
+import { latesVideoIcons } from "../../../../assets/data/Data";
+import duki from "../../../../assets/media/yourChannel_media/thumbnails/duki.jpeg"
+import Container from "../../hooks/Container";
+import Subtitle from "../../home/Subtitle";
 
 function LatestVideo() {
     return (
         <>
             <Container className="dashboard-card">
                 <Subtitle subtitle="Latest Video performance"></Subtitle>
-                <img class="latest-video" src={duki}
+                <img className="latest-video" src={duki}
                     alt="video"></img>
                 <Container className="lca-dashboard">
                     {latesVideoIcons.map((item) => (

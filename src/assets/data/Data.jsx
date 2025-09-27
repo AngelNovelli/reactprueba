@@ -44,6 +44,7 @@ import analyticsIcon from "../media/studio_media/analytics.png";
 import dislikesIcon from "../media/studio_media/dislikes.png";
 import catloveIcon from "../media/studio_media/catlove_icon.png";
 import settings from "../media/studio_media/settings.png";
+import remera from "../media/studio_media/store/remera_ejemplo.jpg"
 
 const popularChannels = [
     { name: "Angel", subs: "15k subs", photo: angelr },
@@ -1453,21 +1454,21 @@ const latestCommentsData = [
 ];
 
 export const youProfile = {
-src: angel, 
-name: "Angel Novelli", 
-handle:"@angel", 
-subs: "15.000 Catscribers", 
-videos: "5 videos", 
-description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dolorem magnam fuga cupiditate autillum ratione quidem aliquid, magni fugit tempora molestias quo alias possimus delectus sunt sequi, quaerat quasi"
+    src: angel,
+    name: "Angel Novelli",
+    handle: "@angel",
+    subs: "15.000 Catscribers",
+    videos: "5 videos",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dolorem magnam fuga cupiditate autillum ratione quidem aliquid, magni fugit tempora molestias quo alias possimus delectus sunt sequi, quaerat quasi"
 }
 
 export const profile = {
-src: angel, 
-name: "Angel Novelli", 
-handle:"@angel", 
-subs: "15.000 Catscribers", 
-videos: "5 videos", 
-description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dolorem magnam fuga cupiditate autillum ratione quidem aliquid, magni fugit tempora molestias quo alias possimus delectus sunt sequi, quaerat quasi"
+    src: angel,
+    name: "Angel Novelli",
+    handle: "@angel",
+    subs: "15.000 Catscribers",
+    videos: "5 videos",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dolorem magnam fuga cupiditate autillum ratione quidem aliquid, magni fugit tempora molestias quo alias possimus delectus sunt sequi, quaerat quasi"
 }
 
 export const containerChannel = {
@@ -1541,6 +1542,400 @@ const videoCommunityData = [
         userPhoto: angelr,
         username: "@user7",
         message: "Justo lo que necesitaba para hoy, gracias."
+    }
+];
+
+export const products = [
+    {
+        id: 1,
+        name: "Remera Clásica",
+        price: 4500,
+        description: "Remera de algodón peinado 24/1, suave al tacto y durable. aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        img: remera
+    },
+    {
+        id: 2,
+        name: "Buzo Canguro",
+        price: 9800,
+        description: "Buzo con capucha y bolsillo frontal, ideal para media estación. aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        img: remera
+    },
+    {
+        id: 3,
+        name: "Gorra Trucker",
+        price: 3200,
+        description: "Gorra con frente de gabardina y red trasera ajustable.",
+        img: remera
+    },
+    {
+        id: 4,
+        name: "Taza de Cerámica",
+        price: 2500,
+        description: "Taza de cerámica de 350ml, apta para microondas y lavavajillas.",
+        img: remera
+    },
+    {
+        id: 5,
+        name: "Pantalón Jogger",
+        price: 8500,
+        description: "Jogger de friza invisible con puños y cintura elastizada.",
+        img: remera
+    },
+    {
+        id: 6,
+        name: "Sticker Pack (x5)",
+        price: 1500,
+        description: "Pack con 5 stickers de vinilo troquelados de alta calidad.",
+        img: remera
+    },
+    {
+        id: 7,
+        name: "Mochila de Tela",
+        price: 3800,
+        description: "Mochila tipo 'tote bag' de lienzo grueso, ideal para uso diario.",
+        img: remera
+    },
+    {
+        id: 8,
+        name: "Póster Ed. Limitada",
+        price: 2800,
+        description: "Póster exclusivo tamaño A3 en papel ilustración de 300gr.",
+        img: remera
+    },
+    {
+        id: 9,
+        name: "Llavero Metálico",
+        price: 1800,
+        description: "Llavero de metal esmaltado con el logo del canal.",
+        img: remera
+    },
+    {
+        id: 10,
+        name: "Funda para Celular",
+        price: 4200,
+        description: "Funda de alto impacto compatible con los modelos más populares.",
+        img: remera
+    }
+];
+
+export const videosContent = [
+    {
+        src: cabildo,
+        alt: "Thumbnail de un guerrero luchando contra un dragón en un castillo en ruinas.",
+        title: "Gameplay Épico: El Dragón Final",
+        description: "¡Finalmente llegamos al jefe final! Mira esta increíble batalla contra el dragón ancestral en el último capítulo de 'Crónicas del Reino Olvidado'.",
+        visibility: "Public",
+        restrictions: "None",
+        date: "2025-09-15T14:30:00Z",
+        views: 150234,
+        comments: 2300,
+        like: 12000
+    },
+    {
+        src: cabildo,
+        alt: "Un primer plano de un plato de pasta carbonara con guanciale crujiente.",
+        title: "Pasta Carbonara Auténtica en 15 Minutos",
+        description: "Aprende a hacer la verdadera pasta carbonara italiana. ¡Sin crema, por favor! Receta fácil, rápida y con los ingredientes originales.",
+        visibility: "Public",
+        restrictions: "None",
+        date: "2025-08-20T10:00:00Z",
+        views: 890450,
+        comments: 7800,
+        like: 45000
+    },
+    {
+        src: cabildo,
+        alt: "Una persona sosteniendo el nuevo smartphone Quantum Phone X con la pantalla iluminada.",
+        title: "Review del Nuevo Quantum Phone X",
+        description: "Analizamos a fondo el nuevo Quantum Phone X. ¿Vale la pena? Batería, cámara, rendimiento y todas las nuevas funciones que necesitas conocer.",
+        visibility: "Public",
+        restrictions: "None",
+        date: "2025-09-25T18:00:00Z",
+        views: 56789,
+        comments: 1200,
+        like: 4500
+    },
+    {
+        src: cabildo,
+        alt: "Un vlogger sonriendo frente al templo Fushimi Inari-taisha en Kyoto, Japón.",
+        title: "Mi Viaje a Japón: Explorando Kyoto",
+        description: "Primer día de mi aventura en Japón. Visitamos templos increíbles en Kyoto, probamos comida callejera y nos perdimos en sus mágicas calles.",
+        visibility: "Public",
+        restrictions: "None",
+        date: "2025-07-05T12:00:00Z",
+        views: 234567,
+        comments: 3400,
+        like: 21000
+    },
+    {
+        src: cabildo,
+        alt: "Una foto familiar en la playa durante el atardecer.",
+        title: "Vacaciones Familiares 2025",
+        description: "Recuerdos de nuestro viaje a la playa. Solo para compartir con la familia.",
+        visibility: "Private",
+        restrictions: "None",
+        date: "2025-09-01T20:00:00Z",
+        views: 15,
+        comments: 4,
+        like: 15
+    },
+    {
+        src: cabildo,
+        alt: "Una impresionante imagen de alta resolución de los anillos del planeta Saturno.",
+        title: "Los Secretos de los Anillos de Saturno",
+        description: "Un documental profundo sobre la formación, composición y los misterios que aún esconden los majestuosos anillos de Saturno, con imágenes de la NASA.",
+        visibility: "Public",
+        restrictions: "None",
+        date: "2025-06-10T15:00:00Z",
+        views: 1250890,
+        comments: 15000,
+        like: 98000
+    },
+    {
+        src: cabildo,
+        alt: "Un personaje de un videojuego de ciencia ficción disparando un arma láser en una ciudad oscura.",
+        title: "Trailer Oficial: Cybernetic Fury 2 (Sin Censura)",
+        description: "El tráiler extendido y sin censura del esperado Cybernetic Fury 2. Contiene violencia explícita y lenguaje fuerte. Solo para audiencias maduras.",
+        visibility: "Public",
+        restrictions: "Age-restricted",
+        date: "2025-09-26T22:00:00Z",
+        views: 789123,
+        comments: 22000,
+        like: 65000
+    },
+    {
+        src: cabildo,
+        alt: "Una diapositiva de presentación con gráficos de barras y el logo de una empresa.",
+        title: "Presentación Proyecto Final - Q3",
+        description: "Video de la presentación de resultados del tercer trimestre para compartir internamente con el equipo. Por favor, no difundir el enlace.",
+        visibility: "Unlisted",
+        restrictions: "None",
+        date: "2025-09-20T11:00:00Z",
+        views: 42,
+        comments: 12,
+        like: 30
+    }
+];
+
+export const shortsContent = [
+     {
+        src: cabildo,
+        alt: "Un perro salchicha con un gorro gracioso.",
+        title: "Dachshund con estilo",
+        description: "Mi perro con el gorro más gracioso que encontré. ¡Es mi mejor amigo!",
+        visibility: "Public",
+        restrictions: "None",
+        date: "2025-09-27T08:00:00Z",
+        views: 20500,
+        comments: 150,
+        like: 1500
+    },
+    {
+        src: cabildo,
+        alt: "Un truco de magia con cartas revelando una carta seleccionada.",
+        title: "Magia en 10 segundos",
+        description: "Te revelo tu carta elegida. ¡Inténtalo en casa!",
+        visibility: "Public",
+        restrictions: "None",
+        date: "2025-09-27T09:15:00Z",
+        views: 345000,
+        comments: 890,
+        like: 25000
+    },
+    {
+        src: cabildo,
+        alt: "Una persona preparando un café con espuma de leche y un diseño de corazón.",
+        title: "Latte Art: El Secreto",
+        description: "Te enseño a hacer un corazón perfecto en tu café con leche en este video rápido.",
+        visibility: "Public",
+        restrictions: "None",
+        date: "2025-09-27T10:30:00Z",
+        views: 120000,
+        comments: 345,
+        like: 9000
+    },
+    {
+        src: cabildo,
+        alt: "Una animación corta de un personaje de videojuego bailando.",
+        title: "Bailando con el Jefe Final",
+        description: "Animación de un personaje de videojuego con un baile épico y un soundtrack genial.",
+        visibility: "Public",
+        restrictions: "None",
+        date: "2025-09-27T11:45:00Z",
+        views: 56700,
+        comments: 210,
+        like: 3800
+    },
+    {
+        src: cabildo,
+        alt: "Un timelapse de una flor abriéndose.",
+        title: "Florecer en un minuto",
+        description: "Mira cómo esta flor se abre en un timelapse increíble. Un poco de naturaleza en tu feed.",
+        visibility: "Public",
+        restrictions: "None",
+        date: "2025-09-27T13:00:00Z",
+        views: 780000,
+        comments: 1500,
+        like: 55000
+    },
+    {
+        src: cabildo,
+        alt: "Un coche deportivo derrapando en una pista.",
+        title: "Derrape de locos",
+        description: "Un video de 30 segundos de un auto deportivo haciendo los derrapes más increíbles.",
+        visibility: "Public",
+        restrictions: "None",
+        date: "2025-09-27T14:00:00Z",
+        views: 990000,
+        comments: 2500,
+        like: 70000
+    },
+    {
+        src: cabildo,
+        alt: "Un meme de un gato reaccionando a un sonido gracioso.",
+        title: "Reacción de mi gato al microondas",
+        description: "Mi gato reacciona al sonido del microondas y su cara lo dice todo. ¡No tiene precio!",
+        visibility: "Public",
+        restrictions: "None",
+        date: "2025-09-27T15:00:00Z",
+        views: 45000,
+        comments: 180,
+        like: 2100
+    },
+    {
+        src: cabildo,
+        alt: "Un video de un tutorial rápido de programación con React.",
+        title: "React en 60s",
+        description: "Aprende a crear un componente de React en 60 segundos. Perfecto para principiantes.",
+        visibility: "Public",
+        restrictions: "None",
+        date: "2025-09-27T16:00:00Z",
+        views: 32000,
+        comments: 110,
+        like: 1900
+    },
+    {
+        src: cabildo,
+        alt: "Una coreografía de baile de TikTok.",
+        title: "El Nuevo Baile Viral",
+        description: "Únete al reto de baile. Aprende esta coreografía viral en menos de un minuto.",
+        visibility: "Public",
+        restrictions: "None",
+        date: "2025-09-27T17:00:00Z",
+        views: 89000,
+        comments: 420,
+        like: 6500
+    },
+    {
+        src: cabildo,
+        alt: "Un video de un paisaje con el atardecer y un filtro de color.",
+        title: "Atardecer en la montaña",
+        description: "El atardecer más hermoso que grabé este año. Un video corto para relajarte.",
+        visibility: "Public",
+        restrictions: "None",
+        date: "2025-09-27T18:00:00Z",
+        views: 65000,
+        comments: 300,
+        like: 4800
+    }
+];
+
+export const playlistsContent = [
+    {
+        src: cabildo,
+        alt: "Miniatura de una lista de reproducción de música Lo-Fi con una ilustración de una chica estudiando.",
+        title: "Beats Lo-Fi para Estudiar/Relajarse",
+        description: "La colección definitiva para concentrarse. Más de 50 videos con la mejor música Lo-Fi. Actualizada semanalmente.",
+        visibility: "Public",
+        restrictions: "None",
+        date: "2025-09-20T11:00:00Z", 
+        views: 2850000, 
+        comments: 18000,
+        like: 150000
+    },
+    {
+        src: cabildo,
+        alt: "Thumbnail con el logo de Python y el texto 'Curso de Python desde Cero'.",
+        title: "Curso Completo de Python 2025",
+        description: "Aprende Python desde lo más básico hasta temas avanzados. 25 videos ordenados para un aprendizaje progresivo.",
+        visibility: "Public",
+        restrictions: "None",
+        date: "2025-08-15T18:00:00Z",
+        views: 1200000,
+        comments: 9500,
+        like: 85000
+    },
+    {
+        src: cabildo,
+        alt: "Collage de varias recetas de postres como pasteles, galletas y helados.",
+        title: "Recetas de Postres Fáciles",
+        description: "Una dulce selección de nuestros 15 videos de postres más fáciles y deliciosos. Perfecta para los amantes del dulce.",
+        visibility: "Public",
+        restrictions: "None",
+        date: "2025-09-05T15:30:00Z",
+        views: 750400,
+        comments: 4200,
+        like: 48000
+    },
+    {
+        src: cabildo,
+        alt: "Personaje de un videojuego de rol de fantasía con el texto 'Toda la Saga'.",
+        title: "Let's Play: Crónicas del Reino Olvidado",
+        description: "Revive la aventura completa. Todos los 42 episodios de nuestra serie de 'Crónicas del Reino Olvidado' en orden.",
+        visibility: "Public",
+        restrictions: "None",
+        date: "2025-09-16T20:00:00Z",
+        views: 980300,
+        comments: 11000,
+        like: 62000
+    },
+    {
+        src: cabildo,
+        alt: "Una persona haciendo ejercicio en casa con pesas.",
+        title: "Rutinas de Ejercicio en Casa (30 Min)",
+        description: "Ponte en forma sin salir de casa. Una lista con 10 rutinas de cuerpo completo que puedes hacer en solo 30 minutos.",
+        visibility: "Public",
+        restrictions: "None",
+        date: "2025-07-30T09:00:00Z",
+        views: 1500800,
+        comments: 7300,
+        like: 99000
+    },
+    {
+        src: cabildo,
+        alt: "Miniatura con imágenes del espacio, dinosaurios y el océano profundo.",
+        title: "Documentales que te Sorprenderán",
+        description: "Una colección de 12 documentales cortos sobre ciencia, naturaleza e historia que te dejarán sin palabras.",
+        visibility: "Public",
+        restrictions: "None",
+        date: "2025-06-22T14:00:00Z",
+        views: 3100500,
+        comments: 25000,
+        like: 210000
+    },
+    {
+        src: cabildo,
+        alt: "Una guitarra acústica sobre un fondo de madera.",
+        title: "Tutoriales de Guitarra para Principiantes",
+        description: "¡Aprende a tocar! Todos nuestros videos para empezar con la guitarra, desde cómo afinarla hasta tus primeros acordes. 20 lecciones.",
+        visibility: "Public",
+        restrictions: "None",
+        date: "2025-08-01T12:00:00Z",
+        views: 650900,
+        comments: 8800,
+        like: 72000
+    },
+    {
+        src: cabildo,
+        alt: "Un logo de un podcast con auriculares y un micrófono.",
+        title: "Entrevistas del Podcast 'Charlas Tech'",
+        description: "Todos los episodios en video de nuestro podcast. 8 entrevistas con los líderes más importantes del mundo de la tecnología.",
+        visibility: "Public",
+        restrictions: "None",
+        date: "2025-09-25T10:00:00Z",
+        views: 45000,
+        comments: 1200,
+        like: 4500
     }
 ];
 

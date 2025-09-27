@@ -1,8 +1,8 @@
-import { latestCommentsData } from '../../../assets/data/Data'; 
-import Subtitle from '../home/Subtitle';
+import { latestCommentsData } from '../../../../assets/data/Data'; 
+import Subtitle from '../../home/Subtitle';
 import CommentItem from './CommentItem';
-import Container from "../hooks/Container";
-import NewButton from '../home/Button';
+import Container from "../../hooks/Container";
+import NewButton from '../../home/Button';
 
 function LatestComments() {
     return (

@@ -1,11 +1,22 @@
 import EarnOption from "./EarnOption";
 import Container from "../../hooks/Container";
 import NewButton from "../../home/Button";
+import Title from "../../trending/Title"
+import EarnRequeriments from "./EarnRequeriments";
+import { useState } from "react";
 
 function Earn() {
+    const [stats] = useState({
+        subscribers: { current: 250, max: 500 },
+        videos: { current: 2, max: 3 },
+        hours: { current: 1000, max: 3000 }
+    });
+
+    const eligible = stats.subscribers.current >= stats.subscribers.max && stats.videos.current >= stats.videos.max && stats.hours.current >= stats.hours.max;
+
     return (
-       <>
-            <h1>Earn CaTube</h1>
+        <>
+            <Title title="Earn CaTube"></Title>
             <hr></hr>
             <Container className="content">
                 <Container className="earn-options">
@@ -27,44 +38,19 @@ function Earn() {
                         <NewButton type="button" id="storeButton" btntitle=" Your Store"></NewButton>
                     </EarnOption>
                 </Container>
-                <div className="earn-requirements">
+                <Container className="earn-requirements">
                     <h3>Requirements to Monetize</h3>
-                    <h4>Subscribers</h4>
-                    <div className="progress-bar-container">
-                        <div className="progress-bar-track">
-                            <div className="progress-bar-fill" id="subscribersProgressBarFill"></div>
-                        </div>
-                    </div>
-                    <div className="progress-bar-labels">
-                        <span id="subscribersProgressStartLabel">Subscribers</span>
-                        <span id="subscribersProgressEndLabel">Target: 500</span>
-                    </div>
-                    <h4>Videos Uploaded</h4>
-                    <div className="progress-bar-container">
-                        <div className="progress-bar-track">
-                            <div className="progress-bar-fill" id="videosUploadedProgressBarFill"></div>
-                        </div>
-                    </div>
-                    <div className="progress-bar-labels">
-                        <span id="videosUploadedProgressStartLabel">Videos</span>
-                        <span id="videosUploadedProgressEndLabel">Target: 3</span>
-                    </div>
-                    <h4>Valid Public Watch Hours</h4>
-                    <div className="progress-bar-container">
-                        <div className="progress-bar-track">
-                            <div className="progress-bar-fill" id="watchHoursProgressBarFill"></div>
-                        </div>
-                    </div>
-                    <div className="progress-bar-labels">
-                        <span id="watchHoursProgressStartLabel">Hours</span>
-                        <span id="watchHoursProgressEndLabel">Target: 3000</span>
-                    </div>
-                    <div className="apply-btn-container">
-                        <button type="button" id="applyButton" disabled>Apply</button>
-                    </div>
-                </div>
+                    <EarnRequeriments title="Subscribers" current={stats.subscribers.current} max={stats.subscribers.max}></EarnRequeriments>
+                    <EarnRequeriments title="Videos Uploaded" current={stats.videos.current} max={stats.videos.max}></EarnRequeriments>
+                    <EarnRequeriments title="Valid Public Watch Hours" current={stats.hours.current} max={stats.hours.max}></EarnRequeriments>
+                    <Container className="apply-btn-container">
+                        {eligible && (
+                            <NewButton type="button" className="applyButton" btntitle="Apply" />
+                        )}
+                    </Container>
+                </Container>
             </Container>
-            </>
+        </>
     );
 }
 

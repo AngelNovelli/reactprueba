@@ -1,6 +1,6 @@
-import { recentSubscribers } from "../../../assets/data/Data";
-import Subtitle from "../home/Subtitle";
-import Container from "../hooks/Container";
+import { recentSubscribers } from "../../../../assets/data/Data";
+import Subtitle from "../../home/Subtitle";
+import Container from "../../hooks/Container";
 
 function RecentCatscribers(props) {
     return (
@@ -18,7 +18,7 @@ function RecentCatscribers(props) {
                 ))}
             </Container>
             <Subtitle subtitle="Currents Catscribers"></Subtitle>
-            <p class="sub-number">{props.totalsubs}</p>
+            <p className="sub-number">{props.totalsubs}</p>
         </Container>
     );
 }

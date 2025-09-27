@@ -1,6 +1,6 @@
-import Container from "../hooks/Container";
-import NewButton from "../home/Button";
-import {lcacommunityData } from "../../../assets/data/Data";
+import Container from "../../hooks/Container";
+import NewButton from "../../home/Button";
+import {lcacommunityData } from "../../../../assets/data/Data";
 
 function LcaCommunity() {
     return (

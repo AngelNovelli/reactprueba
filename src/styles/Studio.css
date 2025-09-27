@@ -184,6 +184,11 @@ body {
     padding: clamp(6px, 1.2vw, 8px) clamp(12px, 2.5vw, 18px);
 }
 
+.apply-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
 .apply-btn-container button,
 .earn-options details button {
     width: 150px;
@@ -323,6 +328,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    max-width: 180px;
+    overflow: hidden;
 }
 
 .video-title {
@@ -432,6 +439,7 @@ body {
 .product-card {
     border-radius: var(--border-radius);
     display: flex;
+    justify-content: space-between;
     background: var(--primary-color);
 }
 
@@ -449,6 +457,28 @@ body {
     padding: 10px;
     flex-direction: column;
     gap: 10px;
+}
+
+.product-card h2 {
+    height: 80px;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    text-align: center;
+
+}
+
+.product-card p {
+    overflow: hidden;
+    text-align: justify;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+}
+
+.product-card h2::-webkit-scrollbar {
+    display: none;
 }
 
 .product-card img {

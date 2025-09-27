@@ -1,6 +1,6 @@
-import Container from "../hooks/Container";
+import Container from "../../hooks/Container";
 import LcaCommunity from "./LcaCommunity"
-import { videoCommunityData } from "../../../assets/data/Data";
+import { videoCommunityData } from "../../../../assets/data/Data";
 
 function VideoCommunity() {
     return (
