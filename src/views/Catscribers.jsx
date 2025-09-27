@@ -8,12 +8,15 @@ import Footer from "./components/hooks/Footer.jsx";
 import '../styles/Global_components.css'
 import '../styles/Home.css'
 import '../styles/Trending.css'
+import Header from "./components/header/Header.jsx";
 
 function Catscribers(){
     const shortsRef = useRef(null);
     return(
         <>
             <body>
+            <Header></Header>
+
                 <Sidebar>
                 </Sidebar>
 

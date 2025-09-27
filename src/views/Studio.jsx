@@ -13,26 +13,35 @@ import Earn from "./components/studio/earn/Earn.jsx";
 import Customization from "./components/studio/customization/Customization.jsx";
 import RightMenu from "./components/studio/RightMenu.jsx";
 import { useState } from "react";
+import Header from "./components/header/Header.jsx";
+import { useSearchParams } from "react-router-dom";
 
 
 function Studio() {
-    const [activeTab, setActiveTab] = useState(0);
-    const tabContents = [
-        <Dashboard></Dashboard>,
-        <Content></Content>,
-        <Analytics></Analytics>,
-        <Community></Community>,
-        <Store></Store>,
-        <Earn></Earn>,
-        <Customization></Customization>
+    const [searchParams] = useSearchParams();
+    const section = searchParams.get('section');
+    const tabs = [
+        { name: 'dashboard', component: <Dashboard /> },
+        { name: 'content', component: <Content /> },
+        { name: 'analytics', component: <Analytics /> },
+        { name: 'community', component: <Community /> },
+        { name: 'store', component: <Store /> },
+        { name: 'earn', component: <Earn /> },
+        { name: 'customization', component: <Customization /> }
     ];
+
+    // Encuentra el índice de la sección que está en la URL, si no, usa el 0
+    const initialTabIndex = tabs.findIndex(tab => tab.name === section) > -1 ? tabs.findIndex(tab => tab.name === section) : 0;
+    const [activeTab, setActiveTab] = useState(initialTabIndex);
+
     return (
         <>
             <body>
-                <main >
+                <main>
+                    <Header></Header>
                     <SidebarStudio activeTabIndex={activeTab} onTabClick={setActiveTab}></SidebarStudio>
                     <div className="container-studio">
-                        {tabContents[activeTab]}
+                        {tabs[activeTab].component}
                         <Footer footer="footer-studio"></Footer>
                     </div>
                     <RightMenu></RightMenu>

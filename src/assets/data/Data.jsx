@@ -14,6 +14,7 @@ import jerer from "../media/profile/jerer.jpg";
 import laura from "../media/profile/laura.jpg";
 import cristian from "../media/profile/cristian.jpg";
 import agustin from "../media/profile/agustin.jpg";
+import lam from "../media/profile/lam.jpg"
 import short from "../media/thumbnails/shorts.jpg";
 import video from "../media/thumbnails/pinterest_swap_challenge.jpg";
 import videorecommended from "../media/thumbnails/miniatura.jpg";
@@ -53,13 +54,13 @@ const popularChannels = [
     { name: "Genaro", subs: "30k subs", photo: genar },
     { name: "Aramis", subs: "25k subs", photo: aramis },
     { name: "Jonas", subs: "18k subs", photo: jonas },
-    { name: "David", subs: "22k subs", photo: david },
+    { name: "David", subs: "50k subs", photo: david },
     { name: "Nicolas", subs: "28k subs", photo: nicolas },
     { name: "Tiziano", subs: "17k subs", photo: tiziano },
     { name: "Laura", subs: "14k subs", photo: laura },
     { name: "Cristian", subs: "16k subs", photo: cristian },
     { name: "Agustin", subs: "19k subs", photo: agustin },
-    { name: "Gustavo", subs: "21k subs", photo: genar },
+    { name: "Lam", subs: "21k subs", photo: lam },
     { name: "Isabel", subs: "13k subs", photo: angelr },
     { name: "João", subs: "29k subs", photo: genar },
     { name: "Lucas", subs: "24k subs", photo: jeremias },
@@ -1718,7 +1719,7 @@ export const videosContent = [
 ];
 
 export const shortsContent = [
-     {
+    {
         src: cabildo,
         alt: "Un perro salchicha con un gorro gracioso.",
         title: "Dachshund con estilo",
@@ -1961,39 +1962,39 @@ const textfooter = [
 ];
 
 const leftMenu = [
-    { icon: "home", text: "Home", link: "/index.html" },
+    { icon: "home", text: "Home", link: "/" },
 
     { divider: true },
 
-    { icon: "radar", text: "Discover", link: "/discover/discover.html" },
-    { icon: "celebration", text: "CaTube Party", link: "/party/party.html" },
+    { icon: "radar", text: "Discover", link: "/discover" },
+    { icon: "celebration", text: "CaTube Party", link: "/party" },
     {
         icon: "school",
         text: "CaTube Education",
-        link: "/education/education.html",
+        link: "/education",
     },
 
     { divider: true },
 
-    { icon: "auto_awesome_motion", text: "Shorts", link: "/shorts/shorts.html" },
-    { icon: "crown", text: "Trending", link: "/trending/trending.html" },
+    { icon: "auto_awesome_motion", text: "Shorts", link: "/shorts" },
+    { icon: "crown", text: "Trending", link: "/trending" },
     {
         icon: "subscriptions",
         text: "Catscribers",
-        link: "/subscribers/subscriptions.html",
+        link: "/subscribers",
     },
 
     { divider: true },
 
-    { icon: "account_circle", text: "You", link: "/you/you.html" },
-    { icon: "history", text: "History", link: "/you/you.html", isSubmenu: true },
-    { icon: "playlist_play", text: "Playlist", link: "/you/you.html", isSubmenu: true },
-    { icon: "schedule", text: "View later", link: "/you/you.html", isSubmenu: true },
-    { icon: "favorite", text: "Liked", link: "/you/you.html", isSubmenu: true },
+    { icon: "account_circle", text: "You", link: "/you" },
+    { icon: "history", text: "History", link: "/history", isSubmenu: true },
+    { icon: "playlist_play", text: "Playlist", link: "/playlist", isSubmenu: true },
+    { icon: "schedule", text: "View later", link: "/view-later", isSubmenu: true },
+    { icon: "favorite", text: "Liked", link: "/liked", isSubmenu: true },
     {
         icon: "smart_display",
         text: "Your videos",
-        link: "/studio/studio.html?section=content",
+        link: "/studio?section=content",
     },
 ];
 

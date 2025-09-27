@@ -12,6 +12,7 @@ import ShortsTab from "./components/yourChannel/ShortsTab";
 import Playlists from "./components/yourChannel/Playlists";
 import PostsTab from "./components/yourChannel/PostsTab";
 import Footer from "./components/hooks/Footer.jsx";
+import Header from "./components/header/Header.jsx";
 
 function YourChannel() {
     const tabLabels = ['Home', 'Videos', 'Shorts', 'Playlists', 'Posts'];
@@ -27,6 +28,7 @@ function YourChannel() {
 
         <>
             <body>
+                <Header></Header>
                 <Sidebar>
                 </Sidebar>
                 <main className="main-content">

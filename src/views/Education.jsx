@@ -6,6 +6,7 @@ import Title from "./components/trending/Title";
 import Footer from "./components/hooks/Footer.jsx";
 import Block from "./components/trending/Block";
 import VideoCard from "./components/trending/VideoCard";
+import Header from "./components/header/Header.jsx";
 import '../styles/Global_components.css'
 import '../styles/Home.css'
 import '../styles/Trending.css'
@@ -15,6 +16,7 @@ function Education() {
     return (
         <>
             <body>
+                <Header></Header>
                 <Sidebar>
                 </Sidebar>
                 <main className="main-content">

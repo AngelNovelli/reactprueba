@@ -2,8 +2,10 @@ import Title from "../../trending/Title";
 import { products } from "../../../../assets/data/Data";
 import Container from "../../hooks/Container";
 import NewButton from "../../home/Button";
+import { useModal } from "../../modals/ModalContext"
 
 function Store() {
+    const { openModal } = useModal();  
     return (
         <>
             <Title title="Your store"></Title>
@@ -12,7 +14,7 @@ function Store() {
                 <Container className="add-container">
                     <Container className="btn-container">
                         <p>Add new product</p>
-                        <NewButton type="button"><i class="fas fa-plus"></i></NewButton>
+                        <NewButton type="button" onClick={() => openModal('addproduct')}><i class="fas fa-plus" ></i></NewButton>
                     </Container>
                 </Container>
                 <h2>Your products</h2>
@@ -24,7 +26,7 @@ function Store() {
                             <h2>{product.name}</h2>
                             <h3>${product.price}</h3>
                             <p>{product.description}</p>
-                            <button type="button">
+                            <button type="button" onClick={() => openModal('editproduct')}>
                                 <i className="fa-solid fa-pen"></i>
                             </button>
                         </Container>

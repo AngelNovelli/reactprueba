@@ -3,6 +3,7 @@ import Subtitle from '../../home/Subtitle';
 import CommentItem from './CommentItem';
 import Container from "../../hooks/Container";
 import NewButton from '../../home/Button';
+import { Link } from 'react-router-dom'
 
 function LatestComments() {
     return (
@@ -17,7 +18,7 @@ function LatestComments() {
                     videoThumbnail={comment.videoThumbnail}
                 />
             ))}
-            <NewButton btnclass="btn-dashboard" btntitle="View more"></NewButton>
+            <Link to="/studio?section=community"><NewButton btnclass="btn-dashboard" btntitle="View more"></NewButton></Link>
         </Container>
     );
 }

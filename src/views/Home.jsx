@@ -5,6 +5,7 @@ import Sidebar from "../views/components/hooks/Sidebar";
 import Footer from "./components/hooks/Footer.jsx";
 import Recommendations from './components/home/Recommendations.jsx'
 import Sections from './components/home/Sections.jsx'
+import Header from './components/header/Header.jsx'
 import { popularChannels, shorts, videos } from '../assets/data/Data.jsx';
 import { useRef } from 'react';
 
@@ -15,6 +16,7 @@ function Home() {
   return (
     <>
       <body>
+        <Header></Header>
         <Sidebar />
         <main className="main-content">
           <Ads />

@@ -1,4 +1,5 @@
 import { profile } from "../../../assets/data/Data"
+import { Link } from 'react-router-dom'
 import NewButton from "../home/Button";
 
 function Profile() {
@@ -17,12 +18,12 @@ function Profile() {
             </div>
         </div>
         <div className="row">
-            <a href="/studio/studio.html?section=customization" className="customize-btn-channel">
+            <Link to="/studio/?section=customization" className="customize-btn-channel">
             <NewButton btnclass="customize-btn-channel" btntitle="Customize channel"></NewButton>
-            </a>
-            <a href="/studio/studio.html?section=content">
+            </Link>
+            <Link to="/studio/?section=content">
             <NewButton btnclass="manage-btn-videos" btntitle="Manage videos"></NewButton>
-            </a>
+            </Link>
         </div>
     </div>
     );

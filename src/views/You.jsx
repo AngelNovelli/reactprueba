@@ -5,12 +5,14 @@ import Footer from "./components/hooks/Footer.jsx";
 import Sectionyou from "./components/you/Sectionyou";
 import deleted from "../assets/media/yourChannel_media/Delete.png"
 import ViewMoreAllSection from "./components/you/ViewMoreAllSection";
+import Header from "./components/header/Header.jsx";
 import { historyvideo, playlistvideo, viewlatervideo, likedvideo, ViewLaterData, myPlaylistsData } from "../assets/data/Data";
 import { useRef } from "react";
 import '../styles/Global_components.css'
 import '../styles/Home.css'
 import '../styles/YourChannel.css'
 import '../styles/You.css'
+
 
 function You() {
     const HistoryRef = useRef(null);
@@ -21,6 +23,7 @@ function You() {
     return (
         <>
             <body>
+                <Header></Header>
                 <Sidebar>
                 </Sidebar>
 
