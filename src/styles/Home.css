@@ -75,12 +75,30 @@ a {
 .carousel-cts {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 26px;
   overflow-x: auto;
   scroll-behavior: smooth;
 }
 
-.carousel-cts::-webkit-scrollbar {
+.carousel-ctshorts {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.carousel-ctsvideos {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.carousel-cts::-webkit-scrollbar,
+.carousel-ctshorts::-webkit-scrollbar,
+.carousel-ctsvideos::-webkit-scrollbar{
   display: none;
 }
 

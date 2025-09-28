@@ -21,9 +21,9 @@ function Home() {
         <main className="main-content">
           <Ads />
 
-          <Sections section="popular-channels" subtitle="Popular Channels" ref={popularChannelsRef} render={popularChannels} type="profile"></Sections>
-          <Sections section="trending" subtitle="Shorts" ref={shortsRef} render={shorts} type="short"></Sections>
-          <Sections section="subscriptions" subtitle="Catscribers" ref={catsRef} render={videos} type="video"></Sections>
+          <Sections section="popular-channels" subtitle="Popular Channels" ref={popularChannelsRef} render={popularChannels} type="profile" cts="carousel-cts" ></Sections>
+          <Sections section="trending" subtitle="Shorts" ref={shortsRef} render={shorts} type="short" cts="carousel-ctshorts"></Sections>
+          <Sections section="subscriptions" subtitle="Catscribers" ref={catsRef} render={videos} type="video" cts="carousel-ctsvideos"></Sections>
 
           <Recommendations />
 

@@ -11,6 +11,7 @@ import YourChannel from './views/YourChannel.jsx'
 import DiscoverPage from './views/DiscoverPage.jsx'
 import { ModalProvider } from './views/components/modals/ModalContext.jsx'
 import ModalRenderer from './views/components/modals/ModalRenderer.jsx'
+import RegisterPage from './views/RegisterPage.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -27,6 +28,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/playlist" element={<You/>} />
         <Route path="/view-later" element={<You/>} />
         <Route path="/liked" element={<You/>} />
+        <Route path="/register" element={<RegisterPage />} />
         <Route path="/studio" element={<Studio/>} />
         <Route path="/yourchannel" element={<YourChannel />} />
       </Routes>

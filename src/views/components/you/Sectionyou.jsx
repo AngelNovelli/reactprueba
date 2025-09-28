@@ -20,7 +20,7 @@ function Sectionyou(props) {
             </Container>
             <Container className="carousel-container" >
                 <ButtonCarousel className="carousel-btn left" direction="left" carouselRef={props.ref} />
-                <Container className="carousel-cts" ref={props.ref}>
+                <Container className={props.cts} ref={props.ref}>
                     {props.render.map((item, index) => (
                         <Video
                             key={index}

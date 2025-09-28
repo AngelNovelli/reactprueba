@@ -291,7 +291,7 @@ body {
 }
 
 .analytics-table,
-.content-table {
+.content-tabled {
     width: 100%;
     min-width: 600px;
     border-collapse: collapse;
@@ -299,14 +299,14 @@ body {
 }
 
 .analytics-table thead,
-.content-table thead {
+.content-tabled thead {
     background: #2a2a2b;
 }
 
 .analytics-table td,
 .analytics-table th,
-.content-table td,
-.content-table th {
+.content-tabled td,
+.content-tabled th {
     padding: 20px;
     text-align: left;
     white-space: nowrap;

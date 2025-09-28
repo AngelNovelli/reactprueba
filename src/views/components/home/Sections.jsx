@@ -44,7 +44,7 @@ function Sections(props) {
             <Subtitle subtitle={props.subtitle} />
             <Container className="carousel-container" >
                 <ButtonCarousel className="carousel-btn left" direction="left" carouselRef={props.ref} />
-                <Container className="carousel-cts" ref={props.ref}>
+                <Container className={props.cts} ref={props.ref}>
                     {props.render.map((item, index) => renderItem(item, index))}
                 </Container>
                 <ButtonCarousel className="carousel-btn right" direction="right" carouselRef={props.ref} />

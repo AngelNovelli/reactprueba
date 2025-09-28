@@ -14,9 +14,9 @@ function HomeTab() {
             <ContainerChannel>
             </ContainerChannel>
             </Container>
-            <Sections section="subscriptions" subtitle="For you" ref={foryouRef} render={foryouvideos} type="video"></Sections>
-            <Sections section="subscriptions" subtitle="Videos" ref={videosRef} render={videosyc} type="video"></Sections>
-            <Sections section="subscriptions" subtitle="Shorts" ref={shortsRef} render={shortsyc} type="short"></Sections>
+            <Sections section="subscriptions" subtitle="For you" ref={foryouRef} render={foryouvideos} type="video" cts="carousel-ctsvideos" ></Sections>
+            <Sections section="subscriptions" subtitle="Videos" ref={videosRef} render={videosyc} type="video" cts="carousel-ctsvideos" ></Sections>
+            <Sections section="subscriptions" subtitle="Shorts" ref={shortsRef} render={shortsyc} type="short" cts="carousel-ctshorts" ></Sections>
         </>
     );
 }

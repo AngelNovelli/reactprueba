@@ -46,6 +46,7 @@ import dislikesIcon from "../media/studio_media/dislikes.png";
 import catloveIcon from "../media/studio_media/catlove_icon.png";
 import settings from "../media/studio_media/settings.png";
 import remera from "../media/studio_media/store/remera_ejemplo.jpg"
+import banner from "../media/studio_media/banner-pc.jpg"
 
 const popularChannels = [
     { name: "Angel", subs: "15k subs", photo: angelr },
@@ -1479,6 +1480,25 @@ export const containerChannel = {
     time: "2 years ago",
     description: "Cabildo de Bs As, Argentina"
 }
+
+export const discoverRecommendations =[{
+            channelName: "Channel name",
+            subs: "0",
+            videos: "0",
+            description: "Description Description Description Description Description Description Description Description Description Description Description Description Description Description",
+            profileImg: genar,
+            bannerImg: banner,
+            lastVideo: {
+                title: "Title of video",
+                timeAgo: "0 years ago",
+                views: "0 view",
+                thumbnail: duki,
+                description: "Description Description Description Description Description Description Description"
+            },
+            lastShort: {
+                thumbnail: short
+            }
+        }]
 
 const videoCommunityData = [
     {

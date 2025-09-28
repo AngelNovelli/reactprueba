@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Header from '../../components/register/Header';
-import AuthPanel from '../../components/register/AuthPanel';
+import Header from './components/header/Header';
+import AuthPanel from './components/register/AuthPanel';
 
 const RegisterPage = () => {
   const [isLoginActive, setIsLoginActive] = useState(true);
@@ -14,4 +14,4 @@ const RegisterPage = () => {
   );
 };
 
-export default RegisterPage;s
+export default RegisterPage;

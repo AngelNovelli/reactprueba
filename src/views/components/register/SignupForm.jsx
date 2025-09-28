@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../view/register/RegisterPage.css';
+import '../../../styles/RegisterPage.css';
 
 const SignupForm = () => (
   <form className="form-section" method="POST">

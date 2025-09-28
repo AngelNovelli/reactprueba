@@ -21,7 +21,7 @@ function Catscribers(){
                 </Sidebar>
 
                 <main className="main-content">
-                    <Sections section="trending-shorts" subtitle="Shorts" ref={shortsRef} render={catscribersshorts} type="short"></Sections>
+                    <Sections section="trending-shorts" subtitle="Shorts" ref={shortsRef} render={catscribersshorts} type="short" cts="carousel-ctshorts"></Sections>
                     <Recommendations />
                     <Ads/>
                     <Footer footer="footer"></Footer>

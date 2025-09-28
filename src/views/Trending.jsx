@@ -22,7 +22,7 @@ function Trending (){
 
                 <main className="main-content">
                     <Title class="title-trending-container" title="Trending"></Title>  
-                    <Sections section="trending-shorts" subtitle="Trending Shorts" ref={shortsRef} render={trendingshorts} type="short"></Sections>
+                    <Sections section="trending-shorts" subtitle="Trending Shorts" ref={shortsRef} render={trendingshorts} type="short" cts="carousel-ctshorts"></Sections>
                     <Block section="trending-videos" subtitle="Trending Videos">
                         <VideoCard></VideoCard>
                     </Block>

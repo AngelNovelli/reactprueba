@@ -53,7 +53,7 @@ export function UserMenu() {
                 <div className="user-dropdown">
                     <ul>
                         <li className='menuUserButtonLi'>
-                            <button className='menuUserButton'><FontAwesomeIcon className='buttonIcon' icon={faSignOut} />Log In</button>
+                            <Link to="/register"><button className='menuUserButton'><FontAwesomeIcon className='buttonIcon' icon={faSignOut} />Log In</button></Link>
                             <Link to="/yourchannel"><button className='menuUserButton'><FontAwesomeIcon className='buttonIcon' icon={faTv} />Your channel</button></Link>
                             <button className='menuUserButton'><FontAwesomeIcon className='buttonIcon' icon={faUserFriends} />Friends</button>
                             <Link to="/studio" ><button className='menuUserButton'>

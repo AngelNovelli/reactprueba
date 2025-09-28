@@ -24,7 +24,7 @@ function Education() {
                     <Block section="trending-videos" subtitle="Education Videos">
                         <VideoCard></VideoCard>
                     </Block>
-                    <Sections section="trending-shorts" subtitle="Education Shorts" ref={shortsRef} render={educationshorts} type="short"></Sections>
+                    <Sections section="trending-shorts" subtitle="Education Shorts" ref={shortsRef} render={educationshorts} type="short" cts="carousel-ctshorts"></Sections>
                     <Footer footer="footer"></Footer>
                 </main>
             </body>

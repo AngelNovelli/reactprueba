@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../view/register/RegisterPage.css';
+import '../../../styles/RegisterPage.css';
 
 const PanelSection = ({ title, message, buttonText, onClick }) => (
   <div className="panel-section">
